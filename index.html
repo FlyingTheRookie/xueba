@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#FF6B8A">
+<meta name="application-name" content="学吧乐园">
+<link rel="manifest" href="./manifest.json">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="./icon-512.png">
+<script src="curriculum_data.js"></script>
+<title>🎈 学吧乐园 · 快乐学习</title>
+<style>
+:root {
+  --pink:#FF6B8A;--pink-l:#FFB3C6;--pink-d:#E84A6A;
+  --blue:#5B9BD5;--blue-l:#A8D0F0;--blue-d:#3B7BB5;
+  --green:#58C27D;--green-l:#A3E4BC;--green-d:#3A9A5E;
+  --yellow:#FFC247;--yellow-l:#FFDD8A;--yellow-d:#E6A620;
+  --purple:#B07CE0;--purple-l:#D4B8F5;--purple-d:#8B5EC0;
+  --orange:#FF8C5A;--orange-l:#FFBFA0;--orange-d:#E06D3A;
+  --sky:#67C8E8;--sky-l:#A5DEF5;--sky-d:#45A8C8;
+  --bg:#FFF5F7;--card:#fff;--txt:#3D3055;
+  --txt2:#8B7DA8;--txt3:#BFB5D0;--brd:#F0E8F6;
+  --sh:0 4px 16px rgba(255,107,138,.08);
+  --sh-lg:0 12px 32px rgba(176,124,224,.12);
+  --r:26px;--rs:18px;--rx:14px;
+  --f:'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;
+  --tr:.3s cubic-bezier(.34,1.56,.64,1);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{font-size:16px;-webkit-tap-highlight-color:transparent}
+body{font-family:var(--f);background:var(--bg);color:var(--txt);min-height:100dvh;overflow-x:hidden;line-height:1.6;background-image:radial-gradient(circle at 20% 10%,#FFF0F3 0%,transparent 50%),radial-gradient(circle at 80% 90%,#F0F4FF 0%,transparent 50%),radial-gradient(circle at 50% 50%,#FFF8E8 0%,transparent 40%)}
+#app{max-width:480px;margin:0 auto;min-height:100dvh;position:relative;background:transparent}
+.screen{display:none;padding:0 0 110px;animation:fadeIn .4s ease}
+.screen.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+@keyframes bounceIn{0%{transform:scale(.2);opacity:0}40%{transform:scale(1.15)}60%{transform:scale(.9)}80%{transform:scale(1.04)}100%{transform:scale(1);opacity:1}}
+@keyframes shake{0%,100%{transform:translateX(0)rotate(0)}25%{transform:translateX(-5px)rotate(-1deg)}75%{transform:translateX(5px)rotate(1deg)}}
+@keyframes pulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+@keyframes confetti{0%{transform:translateY(0)rotate(0)scale(1);opacity:1}100%{transform:translateY(-140px)rotate(720deg)scale(.3);opacity:0}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+@keyframes wiggle{0%,100%{transform:rotate(0)}25%{transform:rotate(-3deg)}75%{transform:rotate(3deg)}}
+@keyframes sparkle{0%,100%{opacity:0;transform:scale(0)}50%{opacity:1;transform:scale(1)}}
+@keyframes slideDown{from{opacity:0;transform:translateY(-20px)}to{opacity:1;transform:translateY(0)}}
+@keyframes rainbow{0%{background-position:0% 50%}100%{background-position:200% 50%}}
+
+.navbar{position:sticky;top:0;z-index:100;background:linear-gradient(135deg,var(--pink),var(--pink-d));padding:14px 18px;color:#fff;display:flex;align-items:center;justify-content:space-between;box-shadow:0 4px 20px rgba(255,107,138,.3);border-radius:0 0 28px 28px}
+.navbar h1{font-size:1.2rem;font-weight:800;display:flex;align-items:center;gap:6px;letter-spacing:.5px}
+.navbar .back{background:rgba(255,255,255,.25);border:none;color:#fff;width:34px;height:34px;border-radius:50%;font-size:1.2rem;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:var(--tr);font-weight:700}
+.navbar .back:active{background:rgba(255,255,255,.4);transform:scale(.9)}
+
+.tab-bar{display:flex;gap:6px;margin:14px 16px;background:var(--card);border-radius:30px;overflow:hidden;box-shadow:var(--sh);padding:4px}
+.tab-btn{flex:1;padding:10px 6px;border:none;background:none;font-size:.82rem;font-weight:700;font-family:var(--f);color:var(--txt2);cursor:pointer;transition:var(--tr);position:relative;border-radius:26px;z-index:1}
+.tab-btn.active{color:#fff;background:linear-gradient(135deg,var(--pink),var(--orange))}
+
+.grade-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:0 16px}
+.grade-card{background:var(--card);border-radius:24px;padding:20px 14px;text-align:center;box-shadow:var(--sh);cursor:pointer;transition:var(--tr);position:relative;overflow:hidden}
+.grade-card::before{content:'';position:absolute;top:-20px;right:-20px;width:60px;height:60px;border-radius:50%;opacity:.1;transition:var(--tr)}
+.grade-card:hover::before{transform:scale(1.3)}
+.grade-card:nth-child(4n+1)::before{background:var(--pink)}
+.grade-card:nth-child(4n+2)::before{background:var(--blue)}
+.grade-card:nth-child(4n+3)::before{background:var(--green)}
+.grade-card:nth-child(4n+4)::before{background:var(--purple)}
+.grade-card:active{transform:scale(.95)}
+.grade-card .grade-icon{font-size:2.4rem;margin-bottom:4px;animation:float 3s ease-in-out infinite}
+.grade-card:nth-child(2) .grade-icon{animation-delay:.5s}
+.grade-card:nth-child(3) .grade-icon{animation-delay:1s}
+.grade-card:nth-child(4) .grade-icon{animation-delay:1.5s}
+.grade-card .grade-name{font-weight:800;font-size:.95rem;color:var(--txt)}
+.grade-card .grade-subjects{font-size:.68rem;color:var(--txt2);margin-top:2px}
+.grade-card .grade-progress{margin-top:10px;height:6px;background:#F0E8F6;border-radius:10px;overflow:hidden}
+.grade-card .grade-progress div{height:100%;background:linear-gradient(90deg,var(--pink),var(--yellow));border-radius:10px;transition:width .8s var(--tr)}
+
+.subj-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;padding:0 16px}
+.subj-card{background:var(--card);border-radius:22px;padding:14px 8px;text-align:center;box-shadow:var(--sh);cursor:pointer;transition:var(--tr);position:relative;overflow:hidden}
+.subj-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:4px;border-radius:0 0 22px 22px;opacity:.5;transition:var(--tr)}
+.subj-card:nth-child(6n+1)::after{background:var(--pink)}
+.subj-card:nth-child(6n+2)::after{background:var(--blue)}
+.subj-card:nth-child(6n+3)::after{background:var(--green)}
+.subj-card:nth-child(6n+4)::after{background:var(--purple)}
+.subj-card:nth-child(6n+5)::after{background:var(--yellow)}
+.subj-card:nth-child(6n+6)::after{background:var(--orange)}
+.subj-card:active{transform:scale(.93)}
+.subj-card .sj-icon{font-size:2rem;margin-bottom:3px}
+.subj-card .sj-name{font-weight:700;font-size:.82rem}
+.subj-card .sj-prog{font-size:.62rem;color:var(--txt3);margin-top:3px}
+
+.unit-card{background:var(--card);border-radius:20px;padding:14px;margin-bottom:10px;box-shadow:var(--sh);cursor:pointer;transition:var(--tr);display:flex;align-items:center;gap:12px;border-left:4px solid var(--pink)}
+.unit-card:nth-child(3n+1){border-left-color:var(--pink)}
+.unit-card:nth-child(3n+2){border-left-color:var(--blue)}
+.unit-card:nth-child(3n+3){border-left-color:var(--green)}
+.unit-card:active{transform:scale(.97)}
+.unit-card .u-num{width:34px;height:34px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.8rem;flex-shrink:0;color:#fff}
+.unit-card .u-info{flex:1;min-width:0}
+.unit-card .u-name{font-weight:700;font-size:.88rem}
+.unit-card .u-desc{font-size:.68rem;color:var(--txt2)}
+
+.lesson-item{display:flex;align-items:center;gap:12px;padding:14px 16px;background:var(--card);border-radius:18px;margin-bottom:8px;box-shadow:var(--sh);cursor:pointer;transition:var(--tr)}
+.lesson-item.done{opacity:.5}
+.lesson-item:active{transform:scale(.97)}
+.lesson-item .l-dot{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:800;flex-shrink:0;color:#fff}
+.lesson-item .l-info{flex:1}
+.lesson-item .l-name{font-weight:700;font-size:.84rem}
+.lesson-item .l-tag{font-size:.66rem;color:var(--txt3)}
+
+.flashcard-container{perspective:1000px;width:calc(100% - 32px);max-width:380px;margin:0 auto 16px;height:260px}
+.flashcard{width:100%;height:100%;position:relative;cursor:pointer;transform-style:preserve-3d;transition:transform .6s var(--tr)}
+.flashcard.flipped{transform:rotateY(180deg)}
+.flashcard-face{position:absolute;width:100%;height:100%;backface-visibility:hidden;border-radius:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;box-shadow:var(--sh-lg)}
+.flashcard-front{background:linear-gradient(145deg,#fff 0%,#FFF5F7 100%);border:3px solid var(--pink-l)}
+.flashcard-back{background:linear-gradient(145deg,#FFF5F7 0%,#F0E8F6 100%);border:3px solid var(--purple-l);transform:rotateY(180deg)}
+.flashcard .w-en{font-size:2rem;font-weight:800;color:var(--pink-d);margin-bottom:8px;text-align:center}
+.flashcard .w-zh{font-size:1.3rem;font-weight:700;color:var(--txt);text-align:center}
+.flashcard .w-ex{font-size:.82rem;color:var(--txt2);margin-top:10px;text-align:center;line-height:1.5;max-width:90%}
+.flashcard .card-decor{position:absolute;font-size:1.3rem;pointer-events:none}
+.flashcard .card-decor.tl{top:12px;left:14px}
+.flashcard .card-decor.tr{top:12px;right:14px}
+.flashcard .card-decor.bl{bottom:12px;left:14px}
+.flashcard .card-decor.br{bottom:12px;right:14px}
+.flashcard .tap-hint{position:absolute;bottom:12px;font-size:.7rem;color:var(--txt3);font-weight:600;animation:pulse 2s ease-in-out infinite}
+
+.card-actions{display:flex;gap:10px;justify-content:center;margin-bottom:14px;flex-wrap:wrap;padding:0 16px}
+.btn{padding:11px 22px;border-radius:30px;border:none;font-size:.85rem;font-weight:700;cursor:pointer;display:flex;align-items:center;gap:6px;transition:var(--tr);font-family:var(--f);position:relative;overflow:hidden}
+.btn:active{transform:scale(.93)}
+.btn-pri{background:linear-gradient(135deg,var(--pink),var(--orange));color:#fff;box-shadow:0 4px 14px rgba(255,107,138,.35)}
+.btn-sec{background:#FFF0F3;color:var(--pink)}
+.btn-suc{background:linear-gradient(135deg,var(--green),var(--green-d));color:#fff;box-shadow:0 4px 14px rgba(88,194,125,.35)}
+.btn-out{background:transparent;border:2.5px solid var(--brd);color:var(--txt)}
+.btn-lg{padding:16px 30px;font-size:.95rem;border-radius:30px;width:100%;justify-content:center;letter-spacing:.5px}
+
+.quiz-container{padding:0 16px}
+.quiz-q{background:var(--card);border-radius:24px;padding:26px;text-align:center;margin-bottom:14px;box-shadow:var(--sh);border:2px dashed var(--pink-l)}
+.quiz-q .qp{font-size:.74rem;color:var(--txt2);margin-bottom:8px;font-weight:600}
+.quiz-q .qw{font-size:1.5rem;font-weight:800;color:var(--pink-d);line-height:1.5}
+.quiz-opts{display:flex;flex-direction:column;gap:8px}
+.quiz-opt{padding:15px 16px;background:var(--card);border:2.5px solid var(--brd);border-radius:18px;cursor:pointer;font-size:.9rem;transition:var(--tr);text-align:left;display:flex;align-items:center;gap:10px;font-weight:600}
+.quiz-opt:active{transform:scale(.97)}
+.quiz-opt.correct{border-color:var(--green);background:#F0FDF4;animation:bounceIn .4s}
+.quiz-opt.wrong{border-color:var(--pink);background:#FFF5F7;animation:shake .5s}
+.quiz-opt.disabled{pointer-events:none;opacity:.65}
+
+.progress-dots{display:flex;justify-content:center;gap:6px;margin:12px 0}
+.progress-dot{width:8px;height:8px;border-radius:50%;background:var(--brd);transition:var(--tr)}
+.progress-dot.done{background:var(--green)}
+.progress-dot.current{background:var(--pink);transform:scale(1.5);box-shadow:0 0 8px rgba(255,107,138,.4)}
+
+.bottom-nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:100%;max-width:480px;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-top:1px solid var(--brd);display:flex;padding:6px 0 env(safe-area-inset-bottom);box-shadow:0 -4px 20px rgba(255,107,138,.08);border-radius:20px 20px 0 0}
+.bottom-nav .ni{flex:1;display:flex;flex-direction:column;align-items:center;padding:6px 4px;cursor:pointer;border:none;background:none;font-family:var(--f);color:var(--txt3);font-size:.62rem;transition:var(--tr);font-weight:600}
+.bottom-nav .ni .i{font-size:1.3rem;margin-bottom:2px}
+.bottom-nav .ni.active{color:var(--pink)}
+
+.toast{position:fixed;top:24px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--pink),var(--pink-d));color:#fff;padding:12px 26px;border-radius:100px;font-size:.82rem;font-weight:700;z-index:9999;animation:bounceIn .4s;box-shadow:0 8px 30px rgba(255,107,138,.4);pointer-events:none;letter-spacing:.5px}
+.confetti-piece{position:fixed;font-size:1.4rem;z-index:9998;pointer-events:none;animation:confetti 1.2s forwards}
+
+.learn-header{padding:18px 20px;text-align:center;background:linear-gradient(135deg,#FFF5F7,#F0E8F6);margin:0 0 12px;border-radius:0 0 24px 24px}
+.learn-header .lt{font-size:1.15rem;font-weight:800;color:var(--txt)}
+.learn-header .ls{font-size:.78rem;color:var(--txt2);margin-top:4px;font-weight:600}
+
+.info-bar{padding:8px 20px;display:flex;gap:12px;justify-content:center;font-size:.74rem;color:var(--txt2)}
+
+.stats-row{display:flex;gap:10px;margin:14px 16px}
+.stats-card{flex:1;background:var(--card);border-radius:22px;padding:16px 12px;text-align:center;box-shadow:var(--sh)}
+.stats-card:nth-child(1){background:linear-gradient(135deg,#FFF5F7,#FFE0E8)}
+.stats-card:nth-child(2){background:linear-gradient(135deg,#FFF8E8,#FFF0D0)}
+.stats-card:nth-child(3){background:linear-gradient(135deg,#F0FDF4,#DCFCE7)}
+.stats-card .st-val{font-size:2rem;font-weight:800}
+.stats-card:nth-child(1) .st-val{color:var(--pink)}
+.stats-card:nth-child(2) .st-val{color:var(--yellow-d)}
+.stats-card:nth-child(3) .st-val{color:var(--green)}
+.stats-card .st-lbl{font-size:.68rem;color:var(--txt2);margin-top:2px;font-weight:600}
+
+.mascot-area{text-align:center;padding:8px 0}
+.mascot-area .mascot{font-size:3.5rem;display:inline-block;animation:float 3s ease-in-out infinite}
+
+.section-title{padding:8px 16px 0;font-size:.9rem;font-weight:800;color:var(--txt);display:flex;align-items:center;gap:8px}
+.section-title .st-icon{font-size:1.3rem}
+
+.subj-header{text-align:center;padding:20px;margin-bottom:12px}
+.subj-header .sh-icon{font-size:3rem;display:inline-block;animation:float 2.5s ease-in-out infinite}
+.subj-header .sh-name{font-weight:800;font-size:1.1rem;margin-top:4px}
+.subj-header .sh-meta{font-size:.72rem;color:var(--txt2);margin-top:2px}
+
+.unit-header{text-align:center;padding:18px;margin-bottom:12px;border-radius:24px}
+.unit-header .uh-name{font-weight:800;font-size:1.1rem}
+.unit-header .uh-desc{font-size:.74rem;color:var(--txt2);margin-top:4px}
+.unit-header .uh-meta{font-size:.72rem;color:var(--txt3)}
+
+.result-screen{text-align:center;padding:40px 20px}
+.result-screen .rs-emoji{font-size:5rem;display:inline-block;animation:bounceIn .6s}
+.result-screen .rs-score{font-size:2.4rem;font-weight:800;margin:12px 0}
+.result-screen .rs-detail{color:var(--txt2);font-size:.9rem}
+.result-screen .rs-btn{max-width:280px;margin:20px auto 0}
+
+.version-tag{font-size:.6rem;opacity:.8;background:rgba(255,255,255,.2);padding:2px 10px;border-radius:12px;font-weight:600}
+
+@media (min-width:481px){#app{border-left:2px solid var(--brd);border-right:2px solid var(--brd);min-height:100dvh}body{background:#FFE8EF}}
+@media (max-width:360px){.flashcard-container{height:220px}.flashcard .w-en{font-size:1.6rem}.subj-grid{grid-template-columns:1fr 1fr}.grade-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body><div id="app"></div>
+<script>
+/* ============ SUBJECT CONFIG ============ */
+const SUBJECTS = {
+  '语文':{icon:'📖',emoji:'✏️',color:'#FF6B8A',bg:'#FFF5F7',txt:'#E84A6A'},
+  '数学':{icon:'🔢',emoji:'🧮',color:'#5B9BD5',bg:'#F0F4FF',txt:'#3B7BB5'},
+  '英语':{icon:'🌍',emoji:'🗣️',color:'#67C8E8',bg:'#F0FAFF',txt:'#45A8C8'},
+  '物理':{icon:'⚡',emoji:'🔬',color:'#B07CE0',bg:'#FAF5FF',txt:'#8B5EC0'},
+  '化学':{icon:'🧪',emoji:'⚗️',color:'#FF8C5A',bg:'#FFF8F5',txt:'#E06D3A'},
+  '生物':{icon:'🧬',emoji:'🌱',color:'#58C27D',bg:'#F0FDF4',txt:'#3A9A5E'},
+  '历史':{icon:'📜',emoji:'🏛️',color:'#FFC247',bg:'#FFFDF0',txt:'#E6A620'},
+  '地理':{icon:'🌏',emoji:'🗺️',color:'#67C8E8',bg:'#F0FAFF',txt:'#45A8C8'},
+  '道德与法治':{icon:'⚖️',emoji:'🤝',color:'#FF6B8A',bg:'#FFF5F7',txt:'#E84A6A'},
+  '政治':{icon:'🏛️',emoji:'📋',color:'#FF6B8A',bg:'#FFF5F7',txt:'#E84A6A'},
+  '科学':{icon:'🔬',emoji:'🧪',color:'#58C27D',bg:'#F0FDF4',txt:'#3A9A5E'},
+};
+
+const GRADE_MAP = {
+  primary:{name:'小学',icon:'🎒',grades:['一年级','二年级','三年级','四年级','五年级','六年级']},
+  middle:{name:'初中',icon:'📚',grades:['七年级','八年级','九年级']},
+  high:{name:'高中',icon:'🎓',grades:['高一','高二','高三']}
+};
+
+const GRADE_SUBJECTS = {
+  primary:{
+    '一年级':['语文','数学'],
+    '二年级':['语文','数学'],
+    '三年级':['语文','数学','英语','科学'],
+    '四年级':['语文','数学','英语','科学'],
+    '五年级':['语文','数学','英语','科学'],
+    '六年级':['语文','数学','英语','科学']
+  },
+  middle:{
+    '七年级':['语文','数学','英语','历史','地理','生物','道德与法治'],
+    '八年级':['语文','数学','英语','物理','历史','地理','生物','道德与法治'],
+    '九年级':['语文','数学','英语','物理','化学','历史','道德与法治']
+  },
+  high:{
+    '高一':['语文','数学','英语','物理','化学','生物','历史','地理','政治'],
+    '高二':['语文','数学','英语','物理','化学','生物','历史','地理','政治'],
+    '高三':['语文','数学','英语','物理','化学','生物','历史','地理','政治']
+  }
+};
+
+/* CURRICULUM loaded from curriculum_data.js */
+const C = CURRICULUM;
+
+/* ============ APP STATE ============ */
+const SK = 'xueba_kids_v1';
+let state = loadState();
+
+function defaultState() {
+  return {progress:{},stats:{xp:0,streak:0,lastDate:'',correct:0,total:0}};
+}
+
+function loadState() {
+  try {
+    const raw = localStorage.getItem(SK);
+    if (raw) {
+      const s = JSON.parse(raw);
+      if (!s.progress) s.progress = {};
+      if (!s.stats) s.stats = {xp:0,streak:0,lastDate:'',correct:0,total:0};
+      return s;
+    }
+  } catch(e) {}
+  return defaultState();
+}
+
+function saveState() { localStorage.setItem(SK, JSON.stringify(state)); }
+
+function getProgress(grade, subj) {
+  const k = grade + '|' + subj;
+  if (!state.progress[k]) state.progress[k] = {};
+  return state.progress[k];
+}
+
+function getLessonProgress(grade, subj, unitIdx, lessonIdx) {
+  const p = getProgress(grade, subj);
+  const uk = 'u' + unitIdx;
+  if (!p[uk]) p[uk] = {};
+  return p[uk]['l' + lessonIdx] || false;
+}
+
+function setLessonProgress(grade, subj, unitIdx, lessonIdx, done) {
+  const p = getProgress(grade, subj);
+  const uk = 'u' + unitIdx;
+  if (!p[uk]) p[uk] = {};
+  p[uk]['l' + lessonIdx] = done;
+  saveState();
+}
+
+function getUnitProgress(grade, subj, unitIdx, totalLessons) {
+  let done = 0;
+  for (let i = 0; i < totalLessons; i++) {
+    if (getLessonProgress(grade, subj, unitIdx, i)) done++;
+  }
+  return done;
+}
+
+function getSubjectProgress(grade, subj) {
+  const key = grade + '-' + subj;
+  const curriculum = C[key];
+  if (!curriculum) return {done:0, total:0, pct:0};
+  let total = 0, done = 0;
+  curriculum.units.forEach((unit, ui) => {
+    unit.lessons.forEach((_, li) => {
+      total++;
+      if (getLessonProgress(grade, subj, ui, li)) done++;
+    });
+  });
+  return {done, total, pct: total > 0 ? Math.round(done / total * 100) : 0};
+}
+
+function getGradeProgress(grade) {
+  const subjects = getSubjectsForGrade(grade);
+  let total = 0, done = 0;
+  subjects.forEach(sj => {
+    const p = getSubjectProgress(grade, sj);
+    total += p.total;
+    done += p.done;
+  });
+  return total > 0 ? Math.round(done / total * 100) : 0;
+}
+
+function getSubjectsForGrade(grade) {
+  for (const stage of ['primary','middle','high']) {
+    if (GRADE_SUBJECTS[stage][grade]) return GRADE_SUBJECTS[stage][grade];
+  }
+  return [];
+}
+
+function getStageForGrade(grade) {
+  if (GRADE_SUBJECTS.primary[grade]) return 'primary';
+  if (GRADE_SUBJECTS.middle[grade]) return 'middle';
+  if (GRADE_SUBJECTS.high[grade]) return 'high';
+  return 'primary';
+}
+
+function addXP(n) {
+  state.stats.xp += n;
+  saveState();
+}
+
+function updateStreak() {
+  const today = new Date().toISOString().split('T')[0];
+  const last = state.stats.lastDate;
+  if (last === today) return;
+  const yest = new Date(Date.now()-86400000).toISOString().split('T')[0];
+  if (last === yest) state.stats.streak++;
+  else state.stats.streak = 1;
+  state.stats.lastDate = today;
+  saveState();
+}
+
+/* ============ AUDIO ============ */
+function speak(txt) {
+  if (!('speechSynthesis' in window)) return;
+  speechSynthesis.cancel();
+  const u = new SpeechSynthesisUtterance(txt);
+  u.lang = 'zh-CN';
+  u.rate = 0.9;
+  speechSynthesis.speak(u);
+}
+
+/* ============ NAVIGATION ============ */
+let screen = 'home';
+let selStage = 'primary';
+let selGrade = null;
+let selSubject = null;
+let selUnitIdx = 0;
+let selCardIdx = 0;
+let selQuizIdx = 0;
+let quizCorrect = 0;
+let selLessonIdx = 0;
+
+function nav(s, data) {
+  screen = s;
+  if (s === 'home') { selGrade = null; selSubject = null; }
+  if (data) {
+    if (data.stage) selStage = data.stage;
+    if (data.grade) selGrade = data.grade;
+    if (data.subject) selSubject = data.subject;
+    if (data.unitIdx !== undefined) selUnitIdx = data.unitIdx;
+    if (data.cardIdx !== undefined) selCardIdx = data.cardIdx;
+  }
+  document.querySelectorAll('.s').forEach(el => el.classList.remove('active'));
+  const t = document.getElementById('s-' + s);
+  if (t) t.classList.add('active');
+  render();
+}
+
+function render() {
+  const app = document.getElementById('app');
+  switch(screen) {
+    case 'home': renderHome(app); break;
+    case 'grade': renderGrade(app); break;
+    case 'subject': renderSubject(app); break;
+    case 'units': renderUnits(app); break;
+    case 'learn': renderLearn(app); break;
+    case 'quiz': renderQuiz(app); break;
+  }
+  renderBottomNav();
+}
+
+/* ============ HOME ============ */
+function renderHome(app) {
+  updateStreak();
+  const stages = [
+    {id:'primary',name:'小学',icon:'🎒',color:'var(--pink)',grades:GRADE_MAP.primary.grades},
+    {id:'middle',name:'初中',icon:'📚',color:'var(--blue)',grades:GRADE_MAP.middle.grades},
+    {id:'high',name:'高中',icon:'🎓',color:'var(--purple)',grades:GRADE_MAP.high.grades}
+  ];
+  const activeStage = stages.find(s=>s.id===selStage);
+
+  let html = `
+  <div id="s-home" class="screen active">
+    <div class="navbar">
+      <h1>🎈 学吧乐园</h1>
+      <span class="version-tag">🦊 v5</span>
+    </div>
+    <div class="mascot-area">
+      <span class="mascot">🦊</span>
+    </div>
+    <div class="stats-row">
+      <div class="stats-card">
+        <div class="st-val">${state.stats.streak}</div>
+        <div class="st-lbl">🔥 连续学习天数</div>
+      </div>
+      <div class="stats-card">
+        <div class="st-val">${state.stats.xp}</div>
+        <div class="st-lbl">⭐ 经验值</div>
+      </div>
+      <div class="stats-card">
+        <div class="st-val">${Object.keys(state.progress).length}</div>
+        <div class="st-lbl">📖 学习科目</div>
+      </div>
+    </div>
+    <div class="section-title"><span class="st-icon">📋</span>选择学段</div>
+    <div class="tab-bar">
+      ${stages.map(s => `<button class="tab-btn ${selStage===s.id?'active':''}" onclick="selStage='${s.id}';nav('home')">${s.icon} ${s.name}</button>`).join('')}
+    </div>
+    <div class="grade-grid">
+      ${activeStage.grades.map((g,i) => {
+        const pct = getGradeProgress(g);
+        const emojis = selStage==='primary'?['🌈','🦋','🌸','🐣','🎨','🚀']:selStage==='middle'?['💡','🔍','🏆']:['🎯','⭐','🌟'];
+        return `<div class="grade-card" onclick="nav('grade',{grade:'${g}'})">
+          <div class="grade-icon">${emojis[i] || '📖'}</div>
+          <div class="grade-name">${g}</div>
+          <div class="grade-subjects">${getSubjectsForGrade(g).join(' · ')}</div>
+          <div class="grade-progress"><div style="width:${pct}%"></div></div>
+          <div style="font-size:.65rem;color:var(--txt3);margin-top:5px;font-weight:600">完成 ${pct}%</div>
+        </div>`;
+      }).join('')}
+    </div>
+  </div>`;
+  app.innerHTML = html;
+}
+
+/* ============ GRADE ============ */
+function renderGrade(app) {
+  const stage = getStageForGrade(selGrade);
+  const stageInfo = stage==='primary'?{icon:'🎒',name:'小学'}:stage==='middle'?{icon:'📚',name:'初中'}:{icon:'🎓',name:'高中'};
+  const subjects = getSubjectsForGrade(selGrade);
+
+  let html = `
+  <div id="s-grade" class="screen active">
+    <div class="navbar">
+      <button class="back" onclick="nav('home')">←</button>
+      <h1>${stageInfo.icon} ${selGrade}</h1><span></span>
+    </div>
+    <div class="section-title"><span class="st-icon">✨</span>选一门课开始学习吧！</div>
+    <div class="subj-grid">
+      ${subjects.map(sj => {
+        const cfg = SUBJECTS[sj] || {icon:'📖',color:'#F1F5F9',txt:'#64748B'};
+        const prog = getSubjectProgress(selGrade, sj);
+        return `<div class="subj-card" onclick="nav('subject',{subject:'${sj}'})">
+          <div class="sj-icon">${cfg.icon}</div>
+          <div class="sj-name">${sj}</div>
+          <div class="sj-prog">${prog.done}/${prog.total} 课 · ${prog.pct}%</div>
+        </div>`;
+      }).join('')}
+    </div>
+  </div>`;
+  app.innerHTML = html;
+}
+
+/* ============ SUBJECT (Unit List) ============ */
+function renderSubject(app) {
+  const cfg = SUBJECTS[selSubject] || {icon:'📖',color:'#FF6B8A',bg:'#FFF5F7',txt:'#E84A6A'};
+  const key = selGrade + '-' + selSubject;
+  const curriculum = C[key];
+  if (!curriculum) { nav('grade'); return; }
+
+  const colors = ['var(--pink)','var(--blue)','var(--green)','var(--purple)','var(--yellow)','var(--orange)','var(--sky)'];
+  let unitCards = curriculum.units.map((unit, idx) => {
+    const totalLessons = unit.lessons.length;
+    const done = getUnitProgress(selGrade, selSubject, idx, totalLessons);
+    const pct = Math.round(done / totalLessons * 100);
+    const c = colors[idx % colors.length];
+    return `<div class="unit-card" style="border-left-color:${c}" onclick="nav('units',{unitIdx:${idx}})">
+      <div class="u-num" style="background:${pct>=100?'var(--green)':c}">${pct>=100?'✓':idx+1}</div>
+      <div class="u-info">
+        <div class="u-name">${unit.name}</div>
+        <div class="u-desc">${unit.desc} · ${done}/${totalLessons} 课</div>
+      </div>
+      <span style="font-size:.9rem;color:var(--txt3)">→</span>
+    </div>`;
+  }).join('');
+
+  let html = `
+  <div id="s-subject" class="screen active">
+    <div class="navbar">
+      <button class="back" onclick="nav('grade')">←</button>
+      <h1>${cfg.icon} ${selSubject}</h1><span></span>
+    </div>
+    <div class="subj-header" style="background:${cfg.bg};border-radius:0 0 24px 24px">
+      <div class="sh-icon">${cfg.icon}</div>
+      <div class="sh-name">${selGrade} · ${selSubject}</div>
+      <div class="sh-meta">📚 人教版教材同步 · 共 ${curriculum.units.length} 个单元</div>
+    </div>
+    <div class="section-title"><span class="st-icon">📋</span>课程单元</div>
+    <div style="padding:0 16px">${unitCards}</div>
+  </div>`;
+  app.innerHTML = html;
+}
+
+/* ============ UNITS (Lesson List) ============ */
+function renderUnits(app) {
+  const cfg = SUBJECTS[selSubject] || {icon:'📖',color:'#FF6B8A',bg:'#FFF5F7',txt:'#E84A6A'};
+  const key = selGrade + '-' + selSubject;
+  const curriculum = C[key];
+  const unit = curriculum.units[selUnitIdx];
+  const totalLessons = unit.lessons.length;
+
+  let lessons = unit.lessons.map((lesson, idx) => {
+    const isDone = getLessonProgress(selGrade, selSubject, selUnitIdx, idx);
+    const isUnlocked = idx === 0 || getLessonProgress(selGrade,selSubject,selUnitIdx,idx-1);
+    return `<div class="lesson-item ${isDone?'done':''}" onclick="${!isDone && isUnlocked ? `startLesson(${idx})` : ''}">
+      <div class="l-dot" style="background:${isDone?'var(--green)':isUnlocked?cfg.color:'var(--txt3)'}">${isDone?'✓':isUnlocked?idx+1:'🔒'}</div>
+      <div class="l-info">
+        <div class="l-name">${lesson.title}</div>
+        <div class="l-tag">${lesson.type==='quiz'?'📝 小测验':'📖 学习卡片'} · ${lesson.words?lesson.words.length+'张':lesson.questions?lesson.questions.length+'题':''}</div>
+      </div>
+      <span style="font-size:.75rem;color:var(--txt3)">${isDone?'✅':isUnlocked?'→':'🔒'}</span>
+    </div>`;
+  }).join('');
+
+  let html = `
+  <div id="s-units" class="screen active">
+    <div class="navbar">
+      <button class="back" onclick="nav('subject')">←</button>
+      <h1>📖 ${unit.name}</h1><span></span>
+    </div>
+    <div class="unit-header" style="background:${cfg.bg}">
+      <div class="uh-name">${unit.name}</div>
+      <div class="uh-desc">${unit.desc}</div>
+      <div class="uh-meta">${selGrade} · ${selSubject}</div>
+    </div>
+    <div class="section-title"><span class="st-icon">🎯</span>学习任务</div>
+    <div style="padding:0 16px">${lessons}</div>
+  </div>`;
+  app.innerHTML = html;
+}
+
+/* ============ LEARN ============ */
+function renderLearn(app) {
+  const key = selGrade + '-' + selSubject;
+  const unit = C[key].units[selUnitIdx];
+  const lesson = unit.lessons[selLessonIdx];
+  const words = lesson.words;
+  const card = words[selCardIdx];
+
+  const dots = words.map((_,i) => {
+    let c = ''; if (i<selCardIdx) c='done'; else if(i===selCardIdx) c='current';
+    return `<span class="progress-dot ${c}"></span>`;
+  }).join('');
+
+  const isLast = selCardIdx >= words.length - 1;
+  const decor = ['⭐','💫','🌟','✨'];
+  const d = decor[selCardIdx % decor.length];
+
+  let html = `
+  <div id="s-learn" class="screen active">
+    <div class="navbar">
+      <button class="back" onclick="nav('units')">←</button>
+      <h1>📖 ${lesson.title}</h1><span></span>
+    </div>
+    <div class="learn-header">
+      <div class="lt">${lesson.title}</div>
+      <div class="ls">第 ${selCardIdx+1} / ${words.length} 张卡片</div>
+      <div class="progress-dots">${dots}</div>
+    </div>
+    <div class="flashcard-container" id="fc" onclick="this.querySelector('.flashcard').classList.toggle('flipped')">
+      <div class="flashcard">
+        <div class="flashcard-face flashcard-front">
+          <span class="card-decor tl">${d}</span>
+          <span class="card-decor tr">📚</span>
+          <span class="card-decor bl">💡</span>
+          <span class="card-decor br">${d}</span>
+          <div class="w-en">${card.en}</div>
+          <div class="tap-hint">👆 点我翻转看看答案！</div>
+        </div>
+        <div class="flashcard-face flashcard-back">
+          <span class="card-decor tl">🎯</span>
+          <span class="card-decor tr">💡</span>
+          <span class="card-decor bl">✨</span>
+          <span class="card-decor br">📝</span>
+          <div class="w-zh">${card.zh}</div>
+          ${card.example ? `<div class="w-ex">${card.example}</div>` : ''}
+        </div>
+      </div>
+    </div>
+    <div class="card-actions">
+      <button class="btn btn-sec" onclick="speak('${card.en.replace(/'/g,"\\'")}')">🔊 听发音</button>
+      <button class="btn btn-out" onclick="if(selCardIdx>0){selCardIdx--;nav('learn')}" ${selCardIdx===0?'disabled style="opacity:.3"':''}>← 上一张</button>
+    </div>
+    <div style="padding:0 16px">
+      <button class="btn btn-pri btn-lg" onclick="${isLast?'completeLesson()':`selCardIdx++;nav('learn')`}">
+        ${isLast?'🎉 完成学习，太棒了！':'→ 看下一张卡片'}
+      </button>
+    </div>
+  </div>`;
+  app.innerHTML = html;
+}
+
+function startLesson(idx) {
+  selLessonIdx = idx;
+  const key = selGrade + '-' + selSubject;
+  const unit = C[key].units[selUnitIdx];
+  if (unit.lessons[idx].type === 'quiz') {
+    selQuizIdx = 0; quizCorrect = 0;
+    nav('quiz');
+  } else {
+    selCardIdx = 0;
+    nav('learn');
+  }
+}
+
+function completeLesson() {
+  setLessonProgress(selGrade, selSubject, selUnitIdx, selLessonIdx, true);
+  addXP(10);
+  updateStreak();
+  saveState();
+  showConfetti();
+  showToast('🎉 太厉害了！+10 ⭐');
+  setTimeout(() => nav('units'), 1000);
+}
+
+/* ============ QUIZ ============ */
+function renderQuiz(app) {
+  const key = selGrade + '-' + selSubject;
+  const unit = C[key].units[selUnitIdx];
+  const lesson = unit.lessons[selLessonIdx];
+  const questions = lesson.questions;
+  const q = questions[selQuizIdx];
+
+  let html = `
+  <div id="s-quiz" class="screen active">
+    <div class="navbar">
+      <button class="back" onclick="nav('units')">←</button>
+      <h1>📝 小测验</h1><span></span>
+    </div>
+    <div class="learn-header">
+      <div class="lt">✏️ ${lesson.title}</div>
+      <div class="ls">第 ${selQuizIdx+1} / ${questions.length} 题</div>
+    </div>
+    <div class="quiz-container">
+      <div class="quiz-q">
+        <div class="qp">🤔 选选看，哪个是对的？</div>
+        <div class="qw">${q.q}</div>
+      </div>
+      <div class="quiz-opts">
+        ${q.o.map((opt, i) => `
+          <div class="quiz-opt" onclick="answerQuiz(${i},this)" data-idx="${i}">
+            <span style="width:28px;height:28px;border-radius:50%;background:var(--bg);display:flex;align-items:center;justify-content:center;font-size:.72rem;font-weight:800;color:var(--txt2);flex-shrink:0">${String.fromCharCode(65+i)}</span>
+            ${opt}
+          </div>
+        `).join('')}
+      </div>
+    </div>
+  </div>`;
+  app.innerHTML = html;
+}
+
+function answerQuiz(idx, el) {
+  const key = selGrade + '-' + selSubject;
+  const unit = C[key].units[selUnitIdx];
+  const lesson = unit.lessons[selLessonIdx];
+  const q = lesson.questions[selQuizIdx];
+  const correct = idx === q.a;
+
+  document.querySelectorAll('.quiz-opt').forEach(o => o.classList.add('disabled'));
+  document.querySelectorAll('.quiz-opt')[q.a].classList.add('correct');
+  if (correct) { el.classList.add('correct'); quizCorrect++; state.stats.correct++; }
+  else { el.classList.add('wrong'); }
+  state.stats.total++;
+  saveState();
+
+  const msgs = correct ? ['✅ 答对啦！真聪明！','🌟 完全正确！','🎯 太棒了！','💯 厉害！']:['😅 不对哦，答案是：' + q.o[q.a],'💪 加油，正确答案是：' + q.o[q.a]];
+
+  showToast(correct ? msgs[Math.floor(Math.random()*msgs.length)] : '😅 答案是：' + q.o[q.a]);
+
+  const isLast = selQuizIdx >= lesson.questions.length - 1;
+  setTimeout(() => {
+    if (isLast) finishQuiz();
+    else { selQuizIdx++; nav('quiz'); }
+  }, 1500);
+}
+
+function finishQuiz() {
+  const key = selGrade + '-' + selSubject;
+  const lesson = C[key].units[selUnitIdx].lessons[selLessonIdx];
+  const total = lesson.questions.length;
+  const score = Math.round(quizCorrect / total * 100);
+  setLessonProgress(selGrade, selSubject, selUnitIdx, selLessonIdx, true);
+  addXP(score >= 80 ? 20 : 10);
+  updateStreak();
+  saveState();
+  if (score >= 60) showConfetti();
+
+  const emoji = score>=90?'🏆':score>=80?'🎉':score>=60?'👍':'💪';
+  const msg = score>=90?'太优秀了！':score>=80?'非常棒！':score>=60?'继续加油！':'下次一定能更好！';
+  const sc = score>=80?'var(--green)':score>=60?'var(--yellow-d)':'var(--pink)';
+
+  const app = document.getElementById('app');
+  app.innerHTML = `
+  <div id="s-quiz" class="screen active">
+    <div class="navbar"><h1>📋 测验完成</h1><span></span></div>
+    <div class="result-screen">
+      <div class="rs-emoji">${emoji}</div>
+      <div class="rs-score" style="color:${sc}">${score} 分</div>
+      <div style="font-size:1.2rem;font-weight:700;margin-bottom:8px">${msg}</div>
+      <div class="rs-detail">答对 ${quizCorrect}/${total} 题 · +${score>=80?20:10} ⭐</div>
+      <button class="btn btn-pri btn-lg rs-btn" onclick="nav('units')">← 返回课程</button>
+    </div>
+  </div>`;
+}
+
+/* ============ BOTTOM NAV ============ */
+function renderBottomNav() {
+  const ex = document.getElementById('bn');
+  if (ex) ex.remove();
+  const bn = document.createElement('nav');
+  bn.id = 'bn';
+  bn.className = 'bottom-nav';
+  bn.innerHTML = `
+    <button class="ni ${screen==='home'?'active':''}" onclick="nav('home')"><span class="i">🏠</span>首页</button>
+  `;
+  document.getElementById('app').appendChild(bn);
+}
+
+/* ============ TOAST & CONFETTI ============ */
+function showToast(msg) {
+  const ex = document.querySelector('.toast');
+  if (ex) ex.remove();
+  const t = document.createElement('div');
+  t.className = 'toast'; t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 2200);
+}
+
+function showConfetti() {
+  const emojis = ['🎉','🎊','⭐','✨','🌟','💫','🎈','🏆','💖','🌈','🦋','🌸'];
+  for (let i=0;i<16;i++) {
+    setTimeout(()=>{
+      const p=document.createElement('span');
+      p.className='confetti-piece';
+      p.textContent=emojis[Math.floor(Math.random()*emojis.length)];
+      p.style.left=(5+Math.random()*90)+'%';
+      p.style.top=(30+Math.random()*40)+'%';
+      p.style.animationDuration=(.8+Math.random()*1)+'s';
+      document.body.appendChild(p);
+      setTimeout(()=>p.remove(),1800);
+    },i*50);
+  }
+}
+
+/* ============ INIT ============ */
+if ('speechSynthesis' in window) { speechSynthesis.getVoices(); }
+nav('home');
+
+// Service Worker
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.getRegistrations().then(regs => {
+    regs.forEach(r => r.unregister());
+  }).then(() => {
+    if ('caches' in window) {
+      caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
+    }
+  }).then(() => {
+    navigator.serviceWorker.register('./sw.js?v=5').then(reg => {
+      reg.addEventListener('updatefound', () => {
+        const newSW = reg.installing;
+        if (newSW) newSW.addEventListener('statechange', () => {
+          if (newSW.state === 'installed' && navigator.serviceWorker.controller) {
+            newSW.postMessage('skipWaiting');
+            setTimeout(() => location.reload(), 300);
+          }
+        });
+      });
+    }).catch(()=>{});
+  });
+}
+</script></body></html>
