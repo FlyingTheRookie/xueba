@@ -15041,4 +15041,4992 @@ const CURRICULUM = {
       },
     ]
   },
+
+  "七年级-生物": {
+    "units": [
+        {
+            "name": "第一单元 认识生物",
+            "desc": "生物的特征和调查方法",
+            "color": "#DCFCE7",
+            "lessons": [
+                {
+                    "title": "认识生物 · 生物的特征",
+                    "words": [
+                        {
+                            "en": "生物的基本特征",
+                            "zh": "需要营养、能呼吸、能排出废物、能生长繁殖",
+                            "example": ""
+                        },
+                        {
+                            "en": "新陈代谢",
+                            "zh": "生物体与外界环境之间物质和能量的交换",
+                            "example": "同化作用和异化作用"
+                        },
+                        {
+                            "en": "应激性",
+                            "zh": "生物对外界刺激作出反应",
+                            "example": "含羞草叶片合拢"
+                        },
+                        {
+                            "en": "生长和繁殖",
+                            "zh": "生物体由小变大并产生后代",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "认识生物 · 调查周边环境中的生物",
+                    "words": [
+                        {
+                            "en": "调查法",
+                            "zh": "科学探究的基本方法之一",
+                            "example": "明确目的、对象、制定方案"
+                        },
+                        {
+                            "en": "生物分类",
+                            "zh": "植物/动物/微生物",
+                            "example": ""
+                        },
+                        {
+                            "en": "生物多样性",
+                            "zh": "生物种类的多样性、基因多样性、生态系统多样性",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "认识生物 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "下列哪项不是生物？",
+                            "o": [
+                                "细菌",
+                                "病毒",
+                                "石头",
+                                "蘑菇"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "含羞草受触碰后叶片合拢，体现了生物的什么特征？",
+                            "o": [
+                                "生长",
+                                "繁殖",
+                                "应激性",
+                                "遗传"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "生物多样性不包括？",
+                            "o": [
+                                "种类多样性",
+                                "基因多样性",
+                                "环境多样性",
+                                "生态系统多样性"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "第二单元 生物体的结构层次",
+            "desc": "细胞、组织、器官、系统",
+            "color": "#DCFCE7",
+            "lessons": [
+                {
+                    "title": "生物体的结构层次 · 细胞",
+                    "words": [
+                        {
+                            "en": "细胞学说",
+                            "zh": "一切动植物都由细胞构成",
+                            "example": "施莱登和施旺"
+                        },
+                        {
+                            "en": "显微镜",
+                            "zh": "观察细胞的工具",
+                            "example": "目镜和物镜"
+                        },
+                        {
+                            "en": "细胞结构",
+                            "zh": "细胞膜/细胞质/细胞核",
+                            "example": "动物细胞和植物细胞的区别"
+                        },
+                        {
+                            "en": "线粒体和叶绿体",
+                            "zh": "能量转换器",
+                            "example": "线粒体-呼吸作用，叶绿体-光合作用"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "生物体的结构层次 · 组织到系统",
+                    "words": [
+                        {
+                            "en": "细胞分裂",
+                            "zh": "一个细胞分成两个",
+                            "example": "染色体复制后平均分配"
+                        },
+                        {
+                            "en": "细胞分化",
+                            "zh": "形成不同形态和功能的细胞",
+                            "example": ""
+                        },
+                        {
+                            "en": "组织",
+                            "zh": "形态相似、结构和功能相同的细胞群",
+                            "example": "上皮/结缔/肌肉/神经组织"
+                        },
+                        {
+                            "en": "器官和系统",
+                            "zh": "多种组织构成器官，多个器官构成系统",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "生物体的结构层次 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "植物细胞不同于动物细胞的结构是？",
+                            "o": [
+                                "细胞膜",
+                                "细胞核",
+                                "细胞壁+叶绿体+液泡",
+                                "线粒体"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "细胞中控制物质进出的结构是？",
+                            "o": [
+                                "细胞壁",
+                                "细胞膜",
+                                "细胞核",
+                                "细胞质"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "人体最大的器官是？",
+                            "o": [
+                                "心脏",
+                                "肝脏",
+                                "皮肤",
+                                "大脑"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "第三单元 生物圈中的绿色植物",
+            "desc": "植物的分类和生命活动",
+            "color": "#DCFCE7",
+            "lessons": [
+                {
+                    "title": "生物圈中的绿色植物 · 光合作用",
+                    "words": [
+                        {
+                            "en": "光合作用",
+                            "zh": "绿色植物利用光能，将CO2和H2O合成有机物",
+                            "example": "光+水+CO2 → 有机物+氧气"
+                        },
+                        {
+                            "en": "叶绿体",
+                            "zh": "光合作用的场所",
+                            "example": ""
+                        },
+                        {
+                            "en": "光合作用的意义",
+                            "zh": "制造有机物、转化光能、维持碳氧平衡",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "生物圈中的绿色植物 · 呼吸作用",
+                    "words": [
+                        {
+                            "en": "呼吸作用",
+                            "zh": "有机物在细胞内氧化分解，释放能量",
+                            "example": "有机物+氧气 → CO2+水+能量"
+                        },
+                        {
+                            "en": "光合与呼吸的关系",
+                            "zh": "光合作用储存能量，呼吸作用释放能量",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "生物圈中的绿色植物 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "光合作用的原料是？",
+                            "o": [
+                                "O2和水",
+                                "CO2和水",
+                                "葡萄糖和O2",
+                                "淀粉"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "光合作用释放什么气体？",
+                            "o": [
+                                "CO2",
+                                "N2",
+                                "O2",
+                                "H2"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "植物呼吸作用的主要场所是？",
+                            "o": [
+                                "叶绿体",
+                                "线粒体",
+                                "细胞核",
+                                "液泡"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "第四单元 生物圈中的人",
+            "desc": "人体系统概述",
+            "color": "#DCFCE7",
+            "lessons": [
+                {
+                    "title": "生物圈中的人 · 消化系统",
+                    "words": [
+                        {
+                            "en": "消化系统",
+                            "zh": "负责食物的消化和吸收",
+                            "example": "消化道+消化腺"
+                        },
+                        {
+                            "en": "消化过程",
+                            "zh": "口腔→咽→食道→胃→小肠→大肠",
+                            "example": ""
+                        },
+                        {
+                            "en": "营养物质",
+                            "zh": "糖类/脂肪/蛋白质/维生素/水/无机盐",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "生物圈中的人 · 循环系统",
+                    "words": [
+                        {
+                            "en": "血液循环",
+                            "zh": "体循环和肺循环",
+                            "example": ""
+                        },
+                        {
+                            "en": "心脏",
+                            "zh": "血液循环的动力器官",
+                            "example": "四腔：左右心房和左右心室"
+                        },
+                        {
+                            "en": "血液成分",
+                            "zh": "血浆+血细胞（红细胞/白细胞/血小板）",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "生物圈中的人 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "消化和吸收的主要场所是？",
+                            "o": [
+                                "口腔",
+                                "胃",
+                                "小肠",
+                                "大肠"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "血液中运输氧气的是？",
+                            "o": [
+                                "白细胞",
+                                "红细胞",
+                                "血小板",
+                                "血浆"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "心脏有几个腔？",
+                            "o": [
+                                "2个",
+                                "3个",
+                                "4个",
+                                "5个"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        }
+    ]
+},
+
+  "三年级-英语": {
+    "units": [
+        {
+            "name": "Unit 1 Hello!",
+            "desc": "学习问候和自我介绍",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 1 Hello! · 词汇(一)",
+                    "words": [
+                        {
+                            "en": "Hello",
+                            "zh": "你好",
+                            "example": "Hello, I'm Mike."
+                        },
+                        {
+                            "en": "Hi",
+                            "zh": "嗨",
+                            "example": "Hi, Sarah!"
+                        },
+                        {
+                            "en": "Goodbye",
+                            "zh": "再见",
+                            "example": "Goodbye, Miss White."
+                        },
+                        {
+                            "en": "I'm",
+                            "zh": "我是",
+                            "example": "I'm Chen Jie."
+                        },
+                        {
+                            "en": "My name is",
+                            "zh": "我的名字是",
+                            "example": "My name is John."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 1 Hello! · 词汇(二)",
+                    "words": [
+                        {
+                            "en": "bag",
+                            "zh": "书包",
+                            "example": "I have a bag."
+                        },
+                        {
+                            "en": "book",
+                            "zh": "书",
+                            "example": "Open your book."
+                        },
+                        {
+                            "en": "pen",
+                            "zh": "钢笔",
+                            "example": "Show me your pen."
+                        },
+                        {
+                            "en": "pencil",
+                            "zh": "铅笔",
+                            "example": "I have a pencil."
+                        },
+                        {
+                            "en": "ruler",
+                            "zh": "尺子",
+                            "example": "This is my ruler."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 1 Hello! · 句型",
+                    "words": [
+                        {
+                            "en": "What's your name?",
+                            "zh": "你叫什么名字？",
+                            "example": ""
+                        },
+                        {
+                            "en": "I have a...",
+                            "zh": "我有一个...",
+                            "example": ""
+                        },
+                        {
+                            "en": "Show me your...",
+                            "zh": "给我看看你的...",
+                            "example": ""
+                        },
+                        {
+                            "en": "Let's go to school!",
+                            "zh": "我们去上学吧！",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 1 Hello! · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"Hello\"的意思是？",
+                            "o": [
+                                "你好",
+                                "再见",
+                                "谢谢",
+                                "对不起"
+                            ],
+                            "a": 0
+                        },
+                        {
+                            "q": "\"bag\"是什么？",
+                            "o": [
+                                "钢笔",
+                                "书包",
+                                "尺子",
+                                "橡皮"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"What's your name?\"的回答是？",
+                            "o": [
+                                "Goodbye",
+                                "I'm 8",
+                                "My name is Mike",
+                                "Thank you"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"Open your book\"中的\"book\"是什么意思？",
+                            "o": [
+                                "书包",
+                                "铅笔",
+                                "尺子",
+                                "书"
+                            ],
+                            "a": 3
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 2 Colours",
+            "desc": "学习颜色词汇",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 2 Colours · 词汇(一)",
+                    "words": [
+                        {
+                            "en": "red",
+                            "zh": "红色",
+                            "example": "I see red."
+                        },
+                        {
+                            "en": "yellow",
+                            "zh": "黄色",
+                            "example": "I see yellow."
+                        },
+                        {
+                            "en": "blue",
+                            "zh": "蓝色",
+                            "example": "I see blue."
+                        },
+                        {
+                            "en": "green",
+                            "zh": "绿色",
+                            "example": "I see green."
+                        },
+                        {
+                            "en": "Colour it...",
+                            "zh": "把它涂成...",
+                            "example": "Colour it brown!"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 2 Colours · 词汇(二)",
+                    "words": [
+                        {
+                            "en": "orange",
+                            "zh": "橙色",
+                            "example": "It's orange."
+                        },
+                        {
+                            "en": "brown",
+                            "zh": "棕色",
+                            "example": "Colour it brown."
+                        },
+                        {
+                            "en": "white",
+                            "zh": "白色",
+                            "example": "I see white."
+                        },
+                        {
+                            "en": "black",
+                            "zh": "黑色",
+                            "example": "I see black."
+                        },
+                        {
+                            "en": "pink",
+                            "zh": "粉色",
+                            "example": "I like pink."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 2 Colours · 句型",
+                    "words": [
+                        {
+                            "en": "I see...",
+                            "zh": "我看见...",
+                            "example": "I see red and blue."
+                        },
+                        {
+                            "en": "Show me...",
+                            "zh": "给我看...",
+                            "example": "Show me green."
+                        },
+                        {
+                            "en": "What colour is it?",
+                            "zh": "它是什么颜色？",
+                            "example": "It's orange."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 2 Colours · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"green\"是什么颜色？",
+                            "o": [
+                                "红色",
+                                "蓝色",
+                                "绿色",
+                                "黄色"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"I see red\"的意思是？",
+                            "o": [
+                                "我画红色",
+                                "我喜欢红色",
+                                "我看见红色",
+                                "我买红色"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "彩虹有几种基本颜色？",
+                            "o": [
+                                "5种",
+                                "6种",
+                                "7种",
+                                "8种"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"Colour it brown\"中的\"brown\"是？",
+                            "o": [
+                                "红色",
+                                "绿色",
+                                "棕色",
+                                "蓝色"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 3 Look at me!",
+            "desc": "学习身体部位",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 3 Look at me! · 词汇(一)",
+                    "words": [
+                        {
+                            "en": "face",
+                            "zh": "脸",
+                            "example": "This is my face."
+                        },
+                        {
+                            "en": "ear",
+                            "zh": "耳朵",
+                            "example": "Touch your ear."
+                        },
+                        {
+                            "en": "eye",
+                            "zh": "眼睛",
+                            "example": "Close your eyes."
+                        },
+                        {
+                            "en": "nose",
+                            "zh": "鼻子",
+                            "example": "Touch your nose."
+                        },
+                        {
+                            "en": "mouth",
+                            "zh": "嘴巴",
+                            "example": "Open your mouth."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 3 Look at me! · 词汇(二)",
+                    "words": [
+                        {
+                            "en": "head",
+                            "zh": "头",
+                            "example": "This is the head."
+                        },
+                        {
+                            "en": "hand",
+                            "zh": "手",
+                            "example": "Clap your hands."
+                        },
+                        {
+                            "en": "arm",
+                            "zh": "手臂",
+                            "example": "Wave your arms."
+                        },
+                        {
+                            "en": "leg",
+                            "zh": "腿",
+                            "example": "Shake your legs."
+                        },
+                        {
+                            "en": "foot",
+                            "zh": "脚",
+                            "example": "Stamp your foot."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 3 Look at me! · 句型",
+                    "words": [
+                        {
+                            "en": "Look at me!",
+                            "zh": "看我！",
+                            "example": ""
+                        },
+                        {
+                            "en": "This is my...",
+                            "zh": "这是我的...",
+                            "example": ""
+                        },
+                        {
+                            "en": "Touch your...",
+                            "zh": "摸你的...",
+                            "example": ""
+                        },
+                        {
+                            "en": "How are you?",
+                            "zh": "你好吗？",
+                            "example": "I'm fine, thank you."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 3 Look at me! · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"eye\"是什么意思？",
+                            "o": [
+                                "耳朵",
+                                "鼻子",
+                                "嘴巴",
+                                "眼睛"
+                            ],
+                            "a": 3
+                        },
+                        {
+                            "q": "\"Touch your nose\"中\"nose\"是？",
+                            "o": [
+                                "眼睛",
+                                "鼻子",
+                                "嘴巴",
+                                "耳朵"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"How are you?\"的标准回答是？",
+                            "o": [
+                                "I'm 8",
+                                "Fine, thank you",
+                                "My name is Mike",
+                                "Goodbye"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"head\"是身体哪个部位？",
+                            "o": [
+                                "手",
+                                "脚",
+                                "头",
+                                "肩膀"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 4 We love animals",
+            "desc": "学习动物名称",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 4 We love animals · 词汇(一)",
+                    "words": [
+                        {
+                            "en": "cat",
+                            "zh": "猫",
+                            "example": "Look at the cat."
+                        },
+                        {
+                            "en": "dog",
+                            "zh": "狗",
+                            "example": "I have a dog."
+                        },
+                        {
+                            "en": "duck",
+                            "zh": "鸭子",
+                            "example": "Quack! Quack!"
+                        },
+                        {
+                            "en": "pig",
+                            "zh": "猪",
+                            "example": "The pig is fat."
+                        },
+                        {
+                            "en": "bear",
+                            "zh": "熊",
+                            "example": "I see a bear."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 4 We love animals · 词汇(二)",
+                    "words": [
+                        {
+                            "en": "bird",
+                            "zh": "鸟",
+                            "example": "Act like a bird."
+                        },
+                        {
+                            "en": "tiger",
+                            "zh": "老虎",
+                            "example": "Act like a tiger."
+                        },
+                        {
+                            "en": "monkey",
+                            "zh": "猴子",
+                            "example": "Act like a monkey."
+                        },
+                        {
+                            "en": "elephant",
+                            "zh": "大象",
+                            "example": "Act like an elephant."
+                        },
+                        {
+                            "en": "panda",
+                            "zh": "熊猫",
+                            "example": "I like pandas."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 4 We love animals · 句型",
+                    "words": [
+                        {
+                            "en": "What's this?",
+                            "zh": "这是什么？",
+                            "example": "It's a duck."
+                        },
+                        {
+                            "en": "What's that?",
+                            "zh": "那是什么？",
+                            "example": "It's a tiger."
+                        },
+                        {
+                            "en": "Cool! I like it.",
+                            "zh": "真酷！我喜欢。",
+                            "example": ""
+                        },
+                        {
+                            "en": "Act like a...",
+                            "zh": "像...一样表演",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 4 We love animals · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"cat\"是什么动物？",
+                            "o": [
+                                "狗",
+                                "猫",
+                                "猪",
+                                "鸭"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"What's this?\"的意思是？",
+                            "o": [
+                                "那是什么",
+                                "这是什么",
+                                "这是什么颜色",
+                                "这是谁"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "中国的国宝动物是？",
+                            "o": [
+                                "tiger",
+                                "monkey",
+                                "panda",
+                                "bear"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"Act like a monkey\"中的\"monkey\"是？",
+                            "o": [
+                                "大象",
+                                "老虎",
+                                "小鸟",
+                                "猴子"
+                            ],
+                            "a": 3
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 5 Let's eat!",
+            "desc": "学习食物和饮料",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 5 Let's eat! · 词汇(一)",
+                    "words": [
+                        {
+                            "en": "bread",
+                            "zh": "面包",
+                            "example": "I'd like some bread."
+                        },
+                        {
+                            "en": "juice",
+                            "zh": "果汁",
+                            "example": "Have some juice."
+                        },
+                        {
+                            "en": "egg",
+                            "zh": "鸡蛋",
+                            "example": "I eat an egg."
+                        },
+                        {
+                            "en": "milk",
+                            "zh": "牛奶",
+                            "example": "Drink some milk."
+                        },
+                        {
+                            "en": "cake",
+                            "zh": "蛋糕",
+                            "example": "I like cake."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 5 Let's eat! · 词汇(二)",
+                    "words": [
+                        {
+                            "en": "water",
+                            "zh": "水",
+                            "example": "Have some water."
+                        },
+                        {
+                            "en": "rice",
+                            "zh": "米饭",
+                            "example": "I like rice."
+                        },
+                        {
+                            "en": "fish",
+                            "zh": "鱼",
+                            "example": "Can I have some fish?"
+                        },
+                        {
+                            "en": "chicken",
+                            "zh": "鸡肉",
+                            "example": "I like chicken."
+                        },
+                        {
+                            "en": "noodles",
+                            "zh": "面条",
+                            "example": "Have some noodles."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 5 Let's eat! · 句型",
+                    "words": [
+                        {
+                            "en": "I'd like some...",
+                            "zh": "我想要一些...",
+                            "example": ""
+                        },
+                        {
+                            "en": "Can I have some...",
+                            "zh": "我可以吃些...吗？",
+                            "example": ""
+                        },
+                        {
+                            "en": "Here you are.",
+                            "zh": "给你。",
+                            "example": ""
+                        },
+                        {
+                            "en": "Have some...",
+                            "zh": "吃些...吧",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 5 Let's eat! · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"juice\"是什么？",
+                            "o": [
+                                "面包",
+                                "果汁",
+                                "牛奶",
+                                "蛋糕"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"I'd like some milk\"的意思是？",
+                            "o": [
+                                "我买牛奶",
+                                "我喜欢牛奶",
+                                "我想要一些牛奶",
+                                "我有牛奶"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"Here you are\"的意思是？",
+                            "o": [
+                                "你好",
+                                "给你",
+                                "再见",
+                                "谢谢"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"Have some water\"中的\"water\"是？",
+                            "o": [
+                                "米饭",
+                                "果汁",
+                                "牛奶",
+                                "水"
+                            ],
+                            "a": 3
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 6 Happy birthday!",
+            "desc": "学习数字和年龄",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 6 Happy birthday! · 词汇(一)",
+                    "words": [
+                        {
+                            "en": "one",
+                            "zh": "一",
+                            "example": "I'm one year old."
+                        },
+                        {
+                            "en": "two",
+                            "zh": "二",
+                            "example": "I have two books."
+                        },
+                        {
+                            "en": "three",
+                            "zh": "三",
+                            "example": "Show me three."
+                        },
+                        {
+                            "en": "four",
+                            "zh": "四",
+                            "example": "Four pencils."
+                        },
+                        {
+                            "en": "five",
+                            "zh": "五",
+                            "example": "Five fingers."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 6 Happy birthday! · 词汇(二)",
+                    "words": [
+                        {
+                            "en": "six",
+                            "zh": "六",
+                            "example": "I'm six."
+                        },
+                        {
+                            "en": "seven",
+                            "zh": "七",
+                            "example": "Seven days."
+                        },
+                        {
+                            "en": "eight",
+                            "zh": "八",
+                            "example": "I'm eight."
+                        },
+                        {
+                            "en": "nine",
+                            "zh": "九",
+                            "example": "Nine cats."
+                        },
+                        {
+                            "en": "ten",
+                            "zh": "十",
+                            "example": "Count to ten."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 6 Happy birthday! · 句型",
+                    "words": [
+                        {
+                            "en": "How old are you?",
+                            "zh": "你几岁了？",
+                            "example": "I'm seven."
+                        },
+                        {
+                            "en": "Happy birthday!",
+                            "zh": "生日快乐！",
+                            "example": ""
+                        },
+                        {
+                            "en": "How many...?",
+                            "zh": "多少个...？",
+                            "example": "How many books?"
+                        },
+                        {
+                            "en": "This is for you.",
+                            "zh": "这是给你的。",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 6 Happy birthday! · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"three\"是数字几？",
+                            "o": [
+                                "一",
+                                "二",
+                                "三",
+                                "四"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"How old are you?\"回答？",
+                            "o": [
+                                "I'm fine",
+                                "I'm 9",
+                                "I'm Mike",
+                                "Hello"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"Happy birthday\"的意思是？",
+                            "o": [
+                                "新年快乐",
+                                "生日快乐",
+                                "圣诞快乐",
+                                "节日快乐"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"How many\"用来问什么？",
+                            "o": [
+                                "颜色",
+                                "数量",
+                                "名字",
+                                "年龄"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Recycle & Review",
+            "desc": "综合复习",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Recycle & Review · 总复习",
+                    "words": [
+                        {
+                            "en": "Numbers 1-10",
+                            "zh": "数字1-10复习",
+                            "example": "Count with me."
+                        },
+                        {
+                            "en": "Animals",
+                            "zh": "动物词汇复习",
+                            "example": "Cat, dog, duck, pig, bear."
+                        },
+                        {
+                            "en": "Body Parts",
+                            "zh": "身体部位复习",
+                            "example": "Head, hand, arm, leg, foot."
+                        },
+                        {
+                            "en": "Food & Drink",
+                            "zh": "食物饮料复习",
+                            "example": "Bread, juice, milk, cake."
+                        },
+                        {
+                            "en": "Colours",
+                            "zh": "颜色词汇复习",
+                            "example": "Red, blue, green, yellow."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Recycle & Review · 综合测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "1 + 2 = ? （用英语数字回答）",
+                            "o": [
+                                "one",
+                                "two",
+                                "three",
+                                "four"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "以下哪个是食物？",
+                            "o": [
+                                "dog",
+                                "red",
+                                "cake",
+                                "ear"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"nose\"在身体哪个位置？",
+                            "o": [
+                                "头上",
+                                "脸上",
+                                "手上",
+                                "脚上"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"Goodbye\"是什么意思？",
+                            "o": [
+                                "你好",
+                                "谢谢",
+                                "对不起",
+                                "再见"
+                            ],
+                            "a": 3
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        }
+    ]
+},
+
+  "五年级-英语": {
+    "units": [
+        {
+            "name": "Unit 1 What's he like?",
+            "desc": "描述人物性格和特征",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 1 What's he like? · 词汇",
+                    "words": [
+                        {
+                            "en": "kind",
+                            "zh": "善良的",
+                            "example": "She is very kind."
+                        },
+                        {
+                            "en": "strict",
+                            "zh": "严格的",
+                            "example": "He is strict."
+                        },
+                        {
+                            "en": "polite",
+                            "zh": "有礼貌的",
+                            "example": "He is polite."
+                        },
+                        {
+                            "en": "hard-working",
+                            "zh": "勤奋的",
+                            "example": "She is hard-working."
+                        },
+                        {
+                            "en": "helpful",
+                            "zh": "乐于助人的",
+                            "example": "He is helpful."
+                        },
+                        {
+                            "en": "clever",
+                            "zh": "聪明的",
+                            "example": "She is clever."
+                        },
+                        {
+                            "en": "shy",
+                            "zh": "害羞的",
+                            "example": "The boy is shy."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 1 What's he like? · 句型",
+                    "words": [
+                        {
+                            "en": "What's he like?",
+                            "zh": "他是什么样的人？",
+                            "example": "He is kind."
+                        },
+                        {
+                            "en": "Is she strict?",
+                            "zh": "她严格吗？",
+                            "example": "Yes, sometimes."
+                        },
+                        {
+                            "en": "Do you know...?",
+                            "zh": "你认识...吗？",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 1 What's he like? · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"strict\"的意思是？",
+                            "o": [
+                                "善良的",
+                                "严格的",
+                                "害羞的",
+                                "聪明的"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"What's he like?\"问的是什么？",
+                            "o": [
+                                "外貌",
+                                "性格/品质",
+                                "年龄",
+                                "工作"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"hard-working\"的反义词是？",
+                            "o": [
+                                "lazy",
+                                "strict",
+                                "shy",
+                                "clever"
+                            ],
+                            "a": 0
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 2 My week",
+            "desc": "学习星期和课程表达",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 2 My week · 词汇",
+                    "words": [
+                        {
+                            "en": "Monday",
+                            "zh": "星期一",
+                            "example": "On Monday."
+                        },
+                        {
+                            "en": "Tuesday",
+                            "zh": "星期二",
+                            "example": ""
+                        },
+                        {
+                            "en": "Wednesday",
+                            "zh": "星期三",
+                            "example": ""
+                        },
+                        {
+                            "en": "Thursday",
+                            "zh": "星期四",
+                            "example": ""
+                        },
+                        {
+                            "en": "Friday",
+                            "zh": "星期五",
+                            "example": "Thank God it's Friday!"
+                        },
+                        {
+                            "en": "Saturday",
+                            "zh": "星期六",
+                            "example": ""
+                        },
+                        {
+                            "en": "Sunday",
+                            "zh": "星期天",
+                            "example": ""
+                        },
+                        {
+                            "en": "weekend",
+                            "zh": "周末",
+                            "example": "On the weekend."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 2 My week · 句型",
+                    "words": [
+                        {
+                            "en": "What do you have on...?",
+                            "zh": "在...你有什么课？",
+                            "example": "I have English and maths."
+                        },
+                        {
+                            "en": "Do you often...?",
+                            "zh": "你经常...吗？",
+                            "example": "Do you often read books?"
+                        },
+                        {
+                            "en": "What day is it today?",
+                            "zh": "今天星期几？",
+                            "example": "It's Monday."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 2 My week · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "星期天是？",
+                            "o": [
+                                "Saturday",
+                                "Sunday",
+                                "Monday",
+                                "Friday"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"weekend\"包括哪两天？",
+                            "o": [
+                                "Mon+Tue",
+                                "Sat+Sun",
+                                "Wed+Thu",
+                                "Fri+Sat"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "一周第一天（按西方习惯）是？",
+                            "o": [
+                                "Sunday",
+                                "Monday",
+                                "Saturday",
+                                "Friday"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 3 What would you like?",
+            "desc": "点餐和食物偏好",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 3 What would you like? · 词汇",
+                    "words": [
+                        {
+                            "en": "sandwich",
+                            "zh": "三明治",
+                            "example": "I'd like a sandwich."
+                        },
+                        {
+                            "en": "salad",
+                            "zh": "沙拉",
+                            "example": "I like salad."
+                        },
+                        {
+                            "en": "hamburger",
+                            "zh": "汉堡包",
+                            "example": "A hamburger, please."
+                        },
+                        {
+                            "en": "ice cream",
+                            "zh": "冰淇淋",
+                            "example": "I love ice cream."
+                        },
+                        {
+                            "en": "tea",
+                            "zh": "茶",
+                            "example": "I'd like some tea."
+                        },
+                        {
+                            "en": "fresh",
+                            "zh": "新鲜的",
+                            "example": "The food is fresh."
+                        },
+                        {
+                            "en": "healthy",
+                            "zh": "健康的",
+                            "example": "Eat healthy food."
+                        },
+                        {
+                            "en": "delicious",
+                            "zh": "美味的",
+                            "example": "It's delicious."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 3 What would you like? · 句型",
+                    "words": [
+                        {
+                            "en": "What would you like to eat/drink?",
+                            "zh": "你想吃/喝什么？",
+                            "example": ""
+                        },
+                        {
+                            "en": "My favourite food is...",
+                            "zh": "我最喜欢的食物是...",
+                            "example": ""
+                        },
+                        {
+                            "en": "It's sweet/hot/...",
+                            "zh": "它是甜的/辣的/...",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 3 What would you like? · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"sandwich\"是什么？",
+                            "o": [
+                                "蛋糕",
+                                "三明治",
+                                "汉堡",
+                                "沙拉"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"delicious\"的意思是？",
+                            "o": [
+                                "难吃的",
+                                "新鲜的",
+                                "美味的",
+                                "健康的"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"healthy\"是什么意思？",
+                            "o": [
+                                "好吃的",
+                                "健康的",
+                                "新鲜的",
+                                "甜的"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 4 What can you do?",
+            "desc": "学习能力表达 can/can't",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 4 What can you do? · 词汇",
+                    "words": [
+                        {
+                            "en": "sing",
+                            "zh": "唱歌",
+                            "example": "I can sing."
+                        },
+                        {
+                            "en": "dance",
+                            "zh": "跳舞",
+                            "example": "Can you dance?"
+                        },
+                        {
+                            "en": "draw",
+                            "zh": "画画",
+                            "example": "He can draw cartoons."
+                        },
+                        {
+                            "en": "swim",
+                            "zh": "游泳",
+                            "example": "I can swim."
+                        },
+                        {
+                            "en": "cook",
+                            "zh": "做饭",
+                            "example": "My mother can cook."
+                        },
+                        {
+                            "en": "play basketball",
+                            "zh": "打篮球",
+                            "example": "I can play basketball."
+                        },
+                        {
+                            "en": "play the piano",
+                            "zh": "弹钢琴",
+                            "example": "She can play the piano."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 4 What can you do? · 句型",
+                    "words": [
+                        {
+                            "en": "What can you do?",
+                            "zh": "你会做什么？",
+                            "example": "I can draw pictures."
+                        },
+                        {
+                            "en": "Can you...?",
+                            "zh": "你会...吗？",
+                            "example": "Yes, I can. / No, I can't."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 4 What can you do? · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"sing\"是什么意思？",
+                            "o": [
+                                "跳舞",
+                                "唱歌",
+                                "画画",
+                                "游泳"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"Can you swim?\"的否定回答？",
+                            "o": [
+                                "Yes, I can",
+                                "No, I can't",
+                                "I'm fine",
+                                "Thank you"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"play the piano\"中的\"piano\"是？",
+                            "o": [
+                                "吉他",
+                                "小提琴",
+                                "钢琴",
+                                "鼓"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 5 There is a big bed",
+            "desc": "There be 句型和房间描述",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 5 There is a big bed · 词汇",
+                    "words": [
+                        {
+                            "en": "clock",
+                            "zh": "时钟",
+                            "example": "There is a clock on the wall."
+                        },
+                        {
+                            "en": "plant",
+                            "zh": "植物",
+                            "example": "A plant is near the window."
+                        },
+                        {
+                            "en": "bottle",
+                            "zh": "瓶子",
+                            "example": "A water bottle."
+                        },
+                        {
+                            "en": "photo",
+                            "zh": "照片",
+                            "example": "There is a photo on the desk."
+                        },
+                        {
+                            "en": "front",
+                            "zh": "前面",
+                            "example": "in front of"
+                        },
+                        {
+                            "en": "between",
+                            "zh": "在...之间",
+                            "example": "between the two chairs"
+                        },
+                        {
+                            "en": "above",
+                            "zh": "在...上方",
+                            "example": "above the desk"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 5 There is a big bed · 句型",
+                    "words": [
+                        {
+                            "en": "There is a/an...",
+                            "zh": "有一个...（单数）",
+                            "example": ""
+                        },
+                        {
+                            "en": "There are...",
+                            "zh": "有...（复数）",
+                            "example": ""
+                        },
+                        {
+                            "en": "Where is the ball?",
+                            "zh": "球在哪里？",
+                            "example": "It's in front of the dog."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 5 There is a big bed · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "There ___ a book on the desk.",
+                            "o": [
+                                "is",
+                                "are",
+                                "am",
+                                "be"
+                            ],
+                            "a": 0
+                        },
+                        {
+                            "q": "\"between\"的意思是？",
+                            "o": [
+                                "前面",
+                                "后面",
+                                "上面",
+                                "在...之间"
+                            ],
+                            "a": 3
+                        },
+                        {
+                            "q": "\"photo\"是什么意思？",
+                            "o": [
+                                "植物",
+                                "照片",
+                                "瓶子",
+                                "时钟"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 6 In a nature park",
+            "desc": "自然景物和There be句型应用",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 6 In a nature park · 词汇",
+                    "words": [
+                        {
+                            "en": "forest",
+                            "zh": "森林",
+                            "example": "There is a forest."
+                        },
+                        {
+                            "en": "lake",
+                            "zh": "湖",
+                            "example": "Is there a lake?"
+                        },
+                        {
+                            "en": "river",
+                            "zh": "河流",
+                            "example": "A river near the village."
+                        },
+                        {
+                            "en": "mountain",
+                            "zh": "大山",
+                            "example": "A high mountain."
+                        },
+                        {
+                            "en": "hill",
+                            "zh": "小山",
+                            "example": "A small hill."
+                        },
+                        {
+                            "en": "bridge",
+                            "zh": "桥",
+                            "example": "A bridge over the river."
+                        },
+                        {
+                            "en": "village",
+                            "zh": "村庄",
+                            "example": "There is a village."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 6 In a nature park · 句型",
+                    "words": [
+                        {
+                            "en": "Is there a...?",
+                            "zh": "有...吗？",
+                            "example": "Yes, there is. / No, there isn't."
+                        },
+                        {
+                            "en": "Are there any...?",
+                            "zh": "有...吗(复数)？",
+                            "example": ""
+                        },
+                        {
+                            "en": "Let's go to...",
+                            "zh": "我们去...吧",
+                            "example": "Let's go to the forest!"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 6 In a nature park · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"mountain\"和\"hill\"的区别是？",
+                            "o": [
+                                "没有区别",
+                                "mountain更大",
+                                "hill更大",
+                                "mountain是山丘"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"bridge\"是什么？",
+                            "o": [
+                                "村庄",
+                                "河流",
+                                "桥",
+                                "森林"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "Is there a river? No, there ___",
+                            "o": [
+                                "is",
+                                "are",
+                                "isn't",
+                                "aren't"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        }
+    ]
+},
+
+  "八年级-生物": {
+    "units": [
+        {
+            "name": "第五单元 生物圈中的动物",
+            "desc": "动物的主要类群和行为",
+            "color": "#DCFCE7",
+            "lessons": [
+                {
+                    "title": "第六单元 动物的主要类群",
+                    "words": [
+                        {
+                            "en": "无脊椎动物",
+                            "zh": "腔肠/扁形/线形/环节/软体/节肢动物",
+                            "example": ""
+                        },
+                        {
+                            "en": "脊椎动物",
+                            "zh": "鱼类/两栖类/爬行类/鸟类/哺乳类",
+                            "example": ""
+                        },
+                        {
+                            "en": "节肢动物",
+                            "zh": "最大的动物类群",
+                            "example": "昆虫纲特征"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "第六单元 动物的运动和行为",
+                    "words": [
+                        {
+                            "en": "先天性行为",
+                            "zh": "生来就有的",
+                            "example": "蜘蛛结网、蜜蜂采蜜"
+                        },
+                        {
+                            "en": "学习行为",
+                            "zh": "后天学习获得的",
+                            "example": "鹦鹉学舌、小狗算数"
+                        },
+                        {
+                            "en": "社会行为",
+                            "zh": "群体内分工合作",
+                            "example": "蜜蜂、蚂蚁"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "第六单元 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "下列哪个是哺乳动物？",
+                            "o": [
+                                "鲫鱼",
+                                "青蛙",
+                                "麻雀",
+                                "鲸鱼"
+                            ],
+                            "a": 3
+                        },
+                        {
+                            "q": "蜘蛛结网属于什么行为？",
+                            "o": [
+                                "学习行为",
+                                "先天性行为",
+                                "社会行为",
+                                "都不是"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "第六单元 生物的多样性及其保护",
+            "desc": "生物分类和保护",
+            "color": "#DCFCE7",
+            "lessons": [
+                {
+                    "title": "第六单元 生物分类",
+                    "words": [
+                        {
+                            "en": "生物分类",
+                            "zh": "界门纲目科属种",
+                            "example": ""
+                        },
+                        {
+                            "en": "种",
+                            "zh": "最基本的分类单位",
+                            "example": ""
+                        },
+                        {
+                            "en": "双名法",
+                            "zh": "林奈创立的生物命名法",
+                            "example": "属名+种名"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "第六单元 生物多样性保护",
+                    "words": [
+                        {
+                            "en": "生物多样性",
+                            "zh": "种类/基因/生态系统多样性",
+                            "example": ""
+                        },
+                        {
+                            "en": "濒危物种",
+                            "zh": "面临灭绝危险的物种",
+                            "example": "大熊猫、朱鹮"
+                        },
+                        {
+                            "en": "自然保护区",
+                            "zh": "保护生物多样性的有效措施",
+                            "example": "长白山、卧龙自然保护区"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "第六单元 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "生物分类最基本的单位是？",
+                            "o": [
+                                "界",
+                                "门",
+                                "种",
+                                "属"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "保护生物多样性最有效的措施是？",
+                            "o": [
+                                "迁地保护",
+                                "建立自然保护区",
+                                "制定法律",
+                                "人工繁殖"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "第七单元 生物圈中的微生物",
+            "desc": "病毒、细菌和真菌",
+            "color": "#DCFCE7",
+            "lessons": [
+                {
+                    "title": "第七单元 病毒",
+                    "words": [
+                        {
+                            "en": "病毒",
+                            "zh": "没有细胞结构，由蛋白质外壳+遗传物质组成",
+                            "example": "噬菌体"
+                        },
+                        {
+                            "en": "病毒生活",
+                            "zh": "必须寄生在活细胞内",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "第七单元 细菌和真菌",
+                    "words": [
+                        {
+                            "en": "细菌",
+                            "zh": "单细胞，有细胞壁无成形的细胞核",
+                            "example": "球菌、杆菌、螺旋菌"
+                        },
+                        {
+                            "en": "真菌",
+                            "zh": "有细胞核，酵母菌（单细胞）/霉菌/蘑菇（多细胞）",
+                            "example": ""
+                        },
+                        {
+                            "en": "微生物的作用",
+                            "zh": "分解者角色，维持物质循环",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "第七单元 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "病毒有细胞结构吗？",
+                            "o": [
+                                "有",
+                                "没有",
+                                "有时有",
+                                "不确定"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "细菌和真菌在生态系统中扮演什么角色？",
+                            "o": [
+                                "生产者",
+                                "消费者",
+                                "分解者",
+                                "非生物成分"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        }
+    ]
+},
+
+  "六年级-英语": {
+    "units": [
+        {
+            "name": "Unit 1 How can I get there?",
+            "desc": "问路和指路",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 1 How can I get there? · 词汇",
+                    "words": [
+                        {
+                            "en": "museum",
+                            "zh": "博物馆",
+                            "example": "Go to the museum."
+                        },
+                        {
+                            "en": "post office",
+                            "zh": "邮局",
+                            "example": "Near the post office."
+                        },
+                        {
+                            "en": "hospital",
+                            "zh": "医院",
+                            "example": "Go straight to the hospital."
+                        },
+                        {
+                            "en": "cinema",
+                            "zh": "电影院",
+                            "example": "Turn left at the cinema."
+                        },
+                        {
+                            "en": "bookstore",
+                            "zh": "书店",
+                            "example": "It's next to the bookstore."
+                        },
+                        {
+                            "en": "turn left/right",
+                            "zh": "左转/右转",
+                            "example": ""
+                        },
+                        {
+                            "en": "straight",
+                            "zh": "直走",
+                            "example": "Go straight."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 1 How can I get there? · 句型",
+                    "words": [
+                        {
+                            "en": "How can I get to...?",
+                            "zh": "我怎么去...？",
+                            "example": ""
+                        },
+                        {
+                            "en": "Where is the...?",
+                            "zh": "...在哪里？",
+                            "example": "It's near the park."
+                        },
+                        {
+                            "en": "Turn left/right at...",
+                            "zh": "在...左转/右转",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 1 How can I get there? · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"museum\"是什么地方？",
+                            "o": [
+                                "医院",
+                                "电影院",
+                                "博物馆",
+                                "邮局"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"Go straight\"的意思是？",
+                            "o": [
+                                "左转",
+                                "右转",
+                                "直走",
+                                "停"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"hospital\"是什么意思？",
+                            "o": [
+                                "电影院",
+                                "邮局",
+                                "医院",
+                                "书店"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 2 Ways to go to school",
+            "desc": "交通方式表达",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 2 Ways to go to school · 词汇",
+                    "words": [
+                        {
+                            "en": "on foot",
+                            "zh": "步行",
+                            "example": "I go to school on foot."
+                        },
+                        {
+                            "en": "by bus",
+                            "zh": "乘公交",
+                            "example": "I go by bus."
+                        },
+                        {
+                            "en": "by bike",
+                            "zh": "骑自行车",
+                            "example": "She goes by bike."
+                        },
+                        {
+                            "en": "by subway",
+                            "zh": "乘地铁",
+                            "example": "He goes by subway."
+                        },
+                        {
+                            "en": "by taxi",
+                            "zh": "乘出租车",
+                            "example": "I go by taxi."
+                        },
+                        {
+                            "en": "slow down",
+                            "zh": "减速",
+                            "example": "Slow down!"
+                        },
+                        {
+                            "en": "stop",
+                            "zh": "停下",
+                            "example": "Stop at the red light."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 2 Ways to go to school · 句型",
+                    "words": [
+                        {
+                            "en": "How do you go to school?",
+                            "zh": "你怎么去上学？",
+                            "example": "I go by bus."
+                        },
+                        {
+                            "en": "Don't go at...",
+                            "zh": "不要在...走",
+                            "example": "Don't go at the red light."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 2 Ways to go to school · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"on foot\"是什么意思？",
+                            "o": [
+                                "骑车",
+                                "开车",
+                                "步行",
+                                "坐公交"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"by subway\"中的\"subway\"是？",
+                            "o": [
+                                "公交",
+                                "地铁",
+                                "火车",
+                                "飞机"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "红灯应该怎么做？",
+                            "o": [
+                                "Go",
+                                "Stop",
+                                "Slow down",
+                                "Run"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 3 My weekend plan",
+            "desc": "一般将来时 be going to",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 3 My weekend plan · 词汇",
+                    "words": [
+                        {
+                            "en": "visit",
+                            "zh": "拜访",
+                            "example": "I'm going to visit my grandparents."
+                        },
+                        {
+                            "en": "see a film",
+                            "zh": "看电影",
+                            "example": "We are going to see a film."
+                        },
+                        {
+                            "en": "take a trip",
+                            "zh": "旅行",
+                            "example": "They are going to take a trip."
+                        },
+                        {
+                            "en": "supermarket",
+                            "zh": "超市",
+                            "example": "Go to the supermarket."
+                        },
+                        {
+                            "en": "tonight",
+                            "zh": "今晚",
+                            "example": "I'm going tonight."
+                        },
+                        {
+                            "en": "tomorrow",
+                            "zh": "明天",
+                            "example": "I'm going tomorrow."
+                        },
+                        {
+                            "en": "next week",
+                            "zh": "下周",
+                            "example": "Next week."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 3 My weekend plan · 句型",
+                    "words": [
+                        {
+                            "en": "What are you going to do?",
+                            "zh": "你打算做什么？",
+                            "example": ""
+                        },
+                        {
+                            "en": "I'm going to...",
+                            "zh": "我打算...",
+                            "example": "I'm going to visit my aunt."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 3 My weekend plan · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"supermarket\"是什么地方？",
+                            "o": [
+                                "医院",
+                                "超市",
+                                "公园",
+                                "电影院"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"I'm going to visit\"中的\"going to\"表示？",
+                            "o": [
+                                "正在做",
+                                "打算做",
+                                "已经做了",
+                                "经常做"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"tomorrow\"是什么意思？",
+                            "o": [
+                                "今天",
+                                "昨天",
+                                "明天",
+                                "下周"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        }
+    ]
+},
+
+  "四年级-英语": {
+    "units": [
+        {
+            "name": "Unit 1 My classroom",
+            "desc": "学习教室用品和位置",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 1 My classroom · 词汇",
+                    "words": [
+                        {
+                            "en": "classroom",
+                            "zh": "教室",
+                            "example": "This is my classroom."
+                        },
+                        {
+                            "en": "window",
+                            "zh": "窗户",
+                            "example": "Close the window."
+                        },
+                        {
+                            "en": "door",
+                            "zh": "门",
+                            "example": "Open the door."
+                        },
+                        {
+                            "en": "picture",
+                            "zh": "图画",
+                            "example": "Put up the picture."
+                        },
+                        {
+                            "en": "light",
+                            "zh": "灯",
+                            "example": "Turn on the light."
+                        },
+                        {
+                            "en": "blackboard",
+                            "zh": "黑板",
+                            "example": "Clean the blackboard."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 1 My classroom · 句型",
+                    "words": [
+                        {
+                            "en": "Where is...?",
+                            "zh": "...在哪里？",
+                            "example": "Where is my book?"
+                        },
+                        {
+                            "en": "It's near the...",
+                            "zh": "它在...旁边",
+                            "example": "It's near the window."
+                        },
+                        {
+                            "en": "Let me...",
+                            "zh": "让我...",
+                            "example": "Let me clean the blackboard."
+                        },
+                        {
+                            "en": "Let's clean...",
+                            "zh": "我们来打扫...吧",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 1 My classroom · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"classroom\"是什么意思？",
+                            "o": [
+                                "卧室",
+                                "教室",
+                                "厨房",
+                                "书房"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"Open the door\"中的\"door\"是？",
+                            "o": [
+                                "窗户",
+                                "门",
+                                "灯",
+                                "黑板"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"Where is my book?\"的回答？",
+                            "o": [
+                                "It's blue",
+                                "It's near the window",
+                                "I have a book",
+                                "Yes, it is"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"Clean the blackboard\"中的\"blackboard\"是？",
+                            "o": [
+                                "白板",
+                                "黑板",
+                                "桌子",
+                                "椅子"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 2 My schoolbag",
+            "desc": "学习文具与描述",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 2 My schoolbag · 词汇",
+                    "words": [
+                        {
+                            "en": "schoolbag",
+                            "zh": "书包",
+                            "example": "I have a new schoolbag."
+                        },
+                        {
+                            "en": "maths book",
+                            "zh": "数学书",
+                            "example": "Put your maths book in."
+                        },
+                        {
+                            "en": "English book",
+                            "zh": "英语书",
+                            "example": "Where is my English book?"
+                        },
+                        {
+                            "en": "Chinese book",
+                            "zh": "语文书",
+                            "example": ""
+                        },
+                        {
+                            "en": "notebook",
+                            "zh": "笔记本",
+                            "example": "I have three notebooks."
+                        },
+                        {
+                            "en": "storybook",
+                            "zh": "故事书",
+                            "example": "I like storybooks."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 2 My schoolbag · 句型",
+                    "words": [
+                        {
+                            "en": "What's in your schoolbag?",
+                            "zh": "你书包里有什么？",
+                            "example": ""
+                        },
+                        {
+                            "en": "What colour is it?",
+                            "zh": "它是什么颜色的？",
+                            "example": "It's blue and white."
+                        },
+                        {
+                            "en": "How many...?",
+                            "zh": "多少...？",
+                            "example": "How many books do you have?"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 2 My schoolbag · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"schoolbag\"是什么？",
+                            "o": [
+                                "铅笔盒",
+                                "书包",
+                                "课本",
+                                "笔记本"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"notebook\"的意思是？",
+                            "o": [
+                                "故事书",
+                                "笔记本",
+                                "数学书",
+                                "英语书"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"What colour is it?\"用来问什么？",
+                            "o": [
+                                "名字",
+                                "年龄",
+                                "颜色",
+                                "数量"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 3 My friends",
+            "desc": "描述人物特征",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 3 My friends · 词汇",
+                    "words": [
+                        {
+                            "en": "friend",
+                            "zh": "朋友",
+                            "example": "I have a good friend."
+                        },
+                        {
+                            "en": "tall",
+                            "zh": "高的",
+                            "example": "He is tall."
+                        },
+                        {
+                            "en": "short",
+                            "zh": "矮的",
+                            "example": "She is short."
+                        },
+                        {
+                            "en": "strong",
+                            "zh": "强壮的",
+                            "example": "He is strong."
+                        },
+                        {
+                            "en": "quiet",
+                            "zh": "安静的",
+                            "example": "She is quiet."
+                        },
+                        {
+                            "en": "friendly",
+                            "zh": "友好的",
+                            "example": "He is very friendly."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 3 My friends · 句型",
+                    "words": [
+                        {
+                            "en": "What's his/her name?",
+                            "zh": "他/她叫什么名字？",
+                            "example": ""
+                        },
+                        {
+                            "en": "He/She has...",
+                            "zh": "他/她有...",
+                            "example": "She has long hair."
+                        },
+                        {
+                            "en": "He/She is...",
+                            "zh": "他/她是...的",
+                            "example": "He is tall and strong."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 3 My friends · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"tall\"的反义词是？",
+                            "o": [
+                                "strong",
+                                "short",
+                                "quiet",
+                                "friendly"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"friendly\"的意思是？",
+                            "o": [
+                                "高的",
+                                "安静的",
+                                "强壮的",
+                                "友好的"
+                            ],
+                            "a": 3
+                        },
+                        {
+                            "q": "\"He has short hair\"是什么意思？",
+                            "o": [
+                                "他很高",
+                                "他是短发",
+                                "他很安静",
+                                "他很友好"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 4 My home",
+            "desc": "学习房间名称和家具",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 4 My home · 词汇",
+                    "words": [
+                        {
+                            "en": "bedroom",
+                            "zh": "卧室",
+                            "example": "Go to the bedroom."
+                        },
+                        {
+                            "en": "living room",
+                            "zh": "客厅",
+                            "example": "Watch TV in the living room."
+                        },
+                        {
+                            "en": "kitchen",
+                            "zh": "厨房",
+                            "example": "Snack in the kitchen."
+                        },
+                        {
+                            "en": "bathroom",
+                            "zh": "浴室",
+                            "example": "Take a shower in the bathroom."
+                        },
+                        {
+                            "en": "study",
+                            "zh": "书房",
+                            "example": "Read a book in the study."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 4 My home · 句型",
+                    "words": [
+                        {
+                            "en": "Is she in the...?",
+                            "zh": "她在...吗？",
+                            "example": "Is she in the living room?"
+                        },
+                        {
+                            "en": "Yes, she is. / No, she isn't.",
+                            "zh": "是的/不是",
+                            "example": ""
+                        },
+                        {
+                            "en": "Where is...?",
+                            "zh": "...在哪里？",
+                            "example": "Where is my cat?"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 4 My home · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"kitchen\"是什么房间？",
+                            "o": [
+                                "卧室",
+                                "客厅",
+                                "厨房",
+                                "浴室"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "在哪里看电视？",
+                            "o": [
+                                "bedroom",
+                                "kitchen",
+                                "bathroom",
+                                "living room"
+                            ],
+                            "a": 3
+                        },
+                        {
+                            "q": "\"Is she in the study?\"的回答？",
+                            "o": [
+                                "Yes, I am",
+                                "Yes, she is",
+                                "I'm fine",
+                                "She is tall"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 5 Dinner's ready",
+            "desc": "学习更多食物和餐具",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 5 Dinner's ready · 词汇",
+                    "words": [
+                        {
+                            "en": "beef",
+                            "zh": "牛肉",
+                            "example": "I'd like some beef."
+                        },
+                        {
+                            "en": "chicken",
+                            "zh": "鸡肉",
+                            "example": "I like chicken."
+                        },
+                        {
+                            "en": "noodles",
+                            "zh": "面条",
+                            "example": "Have some noodles."
+                        },
+                        {
+                            "en": "soup",
+                            "zh": "汤",
+                            "example": "I'd like some soup."
+                        },
+                        {
+                            "en": "vegetables",
+                            "zh": "蔬菜",
+                            "example": "Have some vegetables."
+                        },
+                        {
+                            "en": "chopsticks",
+                            "zh": "筷子",
+                            "example": "Use the chopsticks."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 5 Dinner's ready · 句型",
+                    "words": [
+                        {
+                            "en": "What would you like?",
+                            "zh": "你想要什么？",
+                            "example": "I'd like some beef."
+                        },
+                        {
+                            "en": "Would you like...?",
+                            "zh": "你想要...吗？",
+                            "example": "Would you like some soup?"
+                        },
+                        {
+                            "en": "Help yourself.",
+                            "zh": "请自便。",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 5 Dinner's ready · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"beef\"是什么食物？",
+                            "o": [
+                                "鸡肉",
+                                "猪肉",
+                                "牛肉",
+                                "鱼肉"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"soup\"的意思是？",
+                            "o": [
+                                "米饭",
+                                "汤",
+                                "面条",
+                                "蔬菜"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"What would you like?\"的回答？",
+                            "o": [
+                                "I'm fine",
+                                "I'd like some noodles",
+                                "I'm 10",
+                                "Yes, it is"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 6 Meet my family!",
+            "desc": "学习家庭成员称谓",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 6 Meet my family! · 词汇",
+                    "words": [
+                        {
+                            "en": "parents",
+                            "zh": "父母",
+                            "example": "My parents are kind."
+                        },
+                        {
+                            "en": "uncle",
+                            "zh": "叔叔/舅舅",
+                            "example": "My uncle is a doctor."
+                        },
+                        {
+                            "en": "aunt",
+                            "zh": "阿姨/姑姑",
+                            "example": "My aunt is a teacher."
+                        },
+                        {
+                            "en": "cousin",
+                            "zh": "表(堂)兄弟姐妹",
+                            "example": "This is my cousin."
+                        },
+                        {
+                            "en": "baby brother",
+                            "zh": "婴儿弟弟",
+                            "example": "He is my baby brother."
+                        },
+                        {
+                            "en": "driver",
+                            "zh": "司机",
+                            "example": "My father is a driver."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 6 Meet my family! · 句型",
+                    "words": [
+                        {
+                            "en": "How many people are there in your family?",
+                            "zh": "你家有几口人？",
+                            "example": ""
+                        },
+                        {
+                            "en": "What's your father's job?",
+                            "zh": "你爸爸做什么工作？",
+                            "example": "He is a doctor."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 6 Meet my family! · 单元测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"uncle\"可以称呼谁？",
+                            "o": [
+                                "爸爸",
+                                "妈妈",
+                                "叔叔",
+                                "爷爷"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"driver\"的意思是？",
+                            "o": [
+                                "医生",
+                                "老师",
+                                "司机",
+                                "护士"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "妈妈和爸爸合称是什么？",
+                            "o": [
+                                "uncle",
+                                "parents",
+                                "cousin",
+                                "aunt"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        }
+    ]
+},
+
+  "高一-历史": {
+    "units": [
+        {
+            "name": "第一单元 从中华文明起源到秦汉统一",
+            "desc": "早期中华文明",
+            "color": "#FFEDD5",
+            "lessons": [
+                {
+                    "title": "从中华文明起源到秦汉统一 · 要点(一)",
+                    "words": [
+                        {
+                            "en": "中华文明起源",
+                            "zh": "多元一体，以中原为核心",
+                            "example": "良渚、陶寺等遗址"
+                        },
+                        {
+                            "en": "夏商西周",
+                            "zh": "早期国家的形成与发展",
+                            "example": "分封制、宗法制、井田制"
+                        },
+                        {
+                            "en": "春秋战国",
+                            "zh": "社会大变革时期",
+                            "example": "铁犁牛耕、百家争鸣"
+                        },
+                        {
+                            "en": "商鞅变法",
+                            "zh": "秦国富国强兵的改革",
+                            "example": "废井田、开阡陌、奖励耕战"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "从中华文明起源到秦汉统一 · 要点(二)",
+                    "words": [
+                        {
+                            "en": "秦朝统一",
+                            "zh": "公元前221年，建立第一个统一多民族国家",
+                            "example": "皇帝制、三公九卿、郡县制"
+                        },
+                        {
+                            "en": "汉武帝大一统",
+                            "zh": "推恩令、罢黜百家独尊儒术",
+                            "example": "北击匈奴、丝绸之路"
+                        },
+                        {
+                            "en": "秦汉文化",
+                            "zh": "《史记》、造纸术、张衡地动仪",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "从中华文明起源到秦汉统一 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "中国历史上第一个统一的封建王朝是？",
+                            "o": [
+                                "夏朝",
+                                "商朝",
+                                "秦朝",
+                                "汉朝"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "\"百家争鸣\"出现于什么时期？",
+                            "o": [
+                                "夏商",
+                                "西周",
+                                "春秋战国",
+                                "秦汉"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "汉武帝采纳谁的建议\"罢黜百家，独尊儒术\"？",
+                            "o": [
+                                "李斯",
+                                "董仲舒",
+                                "张骞",
+                                "司马迁"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "第二单元 三国两晋南北朝",
+            "desc": "政权分立与民族交融",
+            "color": "#FFEDD5",
+            "lessons": [
+                {
+                    "title": "第二单元 政权分立的时代",
+                    "words": [
+                        {
+                            "en": "三国鼎立",
+                            "zh": "魏蜀吴，官渡之战和赤壁之战",
+                            "example": ""
+                        },
+                        {
+                            "en": "西晋统一",
+                            "zh": "短暂统一和八王之乱",
+                            "example": ""
+                        },
+                        {
+                            "en": "东晋与十六国",
+                            "zh": "衣冠南渡，北方民族大迁徙",
+                            "example": ""
+                        },
+                        {
+                            "en": "北魏孝文帝改革",
+                            "zh": "迁都洛阳、汉化政策",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "第二单元 民族交融与文化",
+                    "words": [
+                        {
+                            "en": "江南开发",
+                            "zh": "北方人口南迁带来先进技术",
+                            "example": "经济重心开始南移"
+                        },
+                        {
+                            "en": "科技文化",
+                            "zh": "祖冲之、贾思勰《齐民要术》",
+                            "example": "云冈石窟、龙门石窟"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "第二单元 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "赤壁之战中打败曹操的是？",
+                            "o": [
+                                "刘备",
+                                "孙权+刘备联军",
+                                "吕布",
+                                "袁绍"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "北魏孝文帝推行了什么重要政策？",
+                            "o": [
+                                "分封制",
+                                "郡县制",
+                                "汉化政策",
+                                "科举制"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "第三单元 隋唐繁荣",
+            "desc": "隋唐盛世与对外交流",
+            "color": "#FFEDD5",
+            "lessons": [
+                {
+                    "title": "第三单元 隋唐盛世",
+                    "words": [
+                        {
+                            "en": "隋朝",
+                            "zh": "结束分裂，修建大运河",
+                            "example": "科举制创立"
+                        },
+                        {
+                            "en": "贞观之治",
+                            "zh": "唐太宗李世民的治世",
+                            "example": ""
+                        },
+                        {
+                            "en": "开元盛世",
+                            "zh": "唐玄宗前期的鼎盛时期",
+                            "example": ""
+                        },
+                        {
+                            "en": "安史之乱",
+                            "zh": "755年，唐朝由盛转衰",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "第三单元 隋唐经济与文化",
+                    "words": [
+                        {
+                            "en": "曲辕犁和筒车",
+                            "zh": "农业生产工具的改进",
+                            "example": ""
+                        },
+                        {
+                            "en": "唐诗",
+                            "zh": "李白、杜甫、白居易",
+                            "example": ""
+                        },
+                        {
+                            "en": "对外交流",
+                            "zh": "遣唐使、鉴真东渡、玄奘西行",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "第三单元 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "隋朝开凿大运河的中心是？",
+                            "o": [
+                                "长安",
+                                "洛阳",
+                                "开封",
+                                "南京"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "被尊称为\"诗圣\"的是？",
+                            "o": [
+                                "李白",
+                                "杜甫",
+                                "白居易",
+                                "王维"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "第四单元 辽宋夏金元",
+            "desc": "政权并立与经济重心南移",
+            "color": "#FFEDD5",
+            "lessons": [
+                {
+                    "title": "第四单元 宋元政治与经济",
+                    "words": [
+                        {
+                            "en": "北宋建立",
+                            "zh": "960年赵匡胤陈桥兵变",
+                            "example": "重文轻武"
+                        },
+                        {
+                            "en": "澶渊之盟",
+                            "zh": "北宋与辽的和平协议",
+                            "example": ""
+                        },
+                        {
+                            "en": "经济重心南移",
+                            "zh": "南宋时完成",
+                            "example": "\"苏湖熟，天下足\""
+                        },
+                        {
+                            "en": "元朝统一",
+                            "zh": "忽必烈建立元朝，行省制度",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "第四单元 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "北宋建立者是？",
+                            "o": [
+                                "李世民",
+                                "赵匡胤",
+                                "朱元璋",
+                                "成吉思汗"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "元朝的地方行政制度是？",
+                            "o": [
+                                "郡县制",
+                                "分封制",
+                                "行省制度",
+                                "三省六部制"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        }
+    ]
+},
+
+  "高一-地理": {
+    "units": [
+        {
+            "name": "第一章 宇宙中的地球",
+            "desc": "地球的宇宙环境和圈层结构",
+            "color": "#E0F2FE",
+            "lessons": [
+                {
+                    "title": "宇宙中的地球 · 天体系统",
+                    "words": [
+                        {
+                            "en": "天体系统",
+                            "zh": "总星系→银河系→太阳系→地月系",
+                            "example": ""
+                        },
+                        {
+                            "en": "太阳系",
+                            "zh": "八大行星，地球在宜居带",
+                            "example": "水金地火木土天海"
+                        },
+                        {
+                            "en": "地球的特殊性",
+                            "zh": "存在生命的条件：温度、水、大气",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "宇宙中的地球 · 地球的运动",
+                    "words": [
+                        {
+                            "en": "地球自转",
+                            "zh": "周期24小时，产生昼夜交替",
+                            "example": "角速度15°/时"
+                        },
+                        {
+                            "en": "地球公转",
+                            "zh": "周期1年，产生四季变化",
+                            "example": "近日点和远日点"
+                        },
+                        {
+                            "en": "黄赤交角",
+                            "zh": "23°26'，产生太阳直射点回归运动",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "宇宙中的地球 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "太阳系中离太阳最近的行星是？",
+                            "o": [
+                                "金星",
+                                "水星",
+                                "地球",
+                                "火星"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "地球昼夜交替的原因是？",
+                            "o": [
+                                "公转",
+                                "自转",
+                                "月球引力",
+                                "太阳引力"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "黄赤交角大约是多少度？",
+                            "o": [
+                                "15°",
+                                "20°26'",
+                                "23°26'",
+                                "30°"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "第二章 地球上的大气",
+            "desc": "大气组成、受热过程和运动",
+            "color": "#E0F2FE",
+            "lessons": [
+                {
+                    "title": "地球上的大气 · 大气组成与分层",
+                    "words": [
+                        {
+                            "en": "大气组成",
+                            "zh": "氮78%氧21%+其他",
+                            "example": ""
+                        },
+                        {
+                            "en": "大气垂直分层",
+                            "zh": "对流层/平流层/高层大气",
+                            "example": "对流层天气现象"
+                        },
+                        {
+                            "en": "大气的削弱作用",
+                            "zh": "反射/散射/吸收",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "地球上的大气 · 大气运动",
+                    "words": [
+                        {
+                            "en": "热力环流",
+                            "zh": "地面冷热不均引起的空气环流",
+                            "example": "海陆风、山谷风、城市热岛"
+                        },
+                        {
+                            "en": "大气水平运动——风",
+                            "zh": "气压梯度力+地转偏向力+摩擦力",
+                            "example": ""
+                        },
+                        {
+                            "en": "气压带和风带",
+                            "zh": "七个气压带、六个风带",
+                            "example": "三圈环流"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "地球上的大气 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "天气现象主要发生在哪个层？",
+                            "o": [
+                                "平流层",
+                                "对流层",
+                                "高层大气",
+                                "电离层"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "海陆风形成的原因是？",
+                            "o": [
+                                "地球自转",
+                                "海陆热力性质差异",
+                                "月球引力",
+                                "地球公转"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "第三章 地球上的水",
+            "desc": "水循环、洋流和水资源",
+            "color": "#E0F2FE",
+            "lessons": [
+                {
+                    "title": "地球上的水 · 水循环",
+                    "words": [
+                        {
+                            "en": "水循环类型",
+                            "zh": "海陆间循环/陆地内循环/海上内循环",
+                            "example": ""
+                        },
+                        {
+                            "en": "水循环环节",
+                            "zh": "蒸发→水汽输送→降水→径流",
+                            "example": ""
+                        },
+                        {
+                            "en": "水循环意义",
+                            "zh": "维持水量平衡、促进物质迁移和能量转换",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "地球上的水 · 洋流",
+                    "words": [
+                        {
+                            "en": "洋流分类",
+                            "zh": "暖流和寒流",
+                            "example": "风海流/密度流/补偿流"
+                        },
+                        {
+                            "en": "洋流分布规律",
+                            "zh": "以副热带为中心的大洋环流",
+                            "example": ""
+                        },
+                        {
+                            "en": "洋流影响",
+                            "zh": "气候/渔场/航海/污染",
+                            "example": "秘鲁渔场、北大西洋暖流"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "地球上的水 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "水循环中，水汽从海洋输送到陆地的环节是？",
+                            "o": [
+                                "蒸发",
+                                "降水",
+                                "水汽输送",
+                                "径流"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "受北大西洋暖流影响，西欧气候？",
+                            "o": [
+                                "寒冷干燥",
+                                "温和湿润",
+                                "炎热多雨",
+                                "干旱少雨"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "第四章 地表形态的塑造",
+            "desc": "内外力作用与地形",
+            "color": "#E0F2FE",
+            "lessons": [
+                {
+                    "title": "地表形态的塑造 · 内力作用",
+                    "words": [
+                        {
+                            "en": "地壳运动",
+                            "zh": "水平运动和垂直运动",
+                            "example": ""
+                        },
+                        {
+                            "en": "板块构造学说",
+                            "zh": "六大板块，板块交界处多地震火山",
+                            "example": "环太平洋地震带"
+                        },
+                        {
+                            "en": "地质构造",
+                            "zh": "褶曲（背斜/向斜）和断层",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "地表形态的塑造 · 外力作用",
+                    "words": [
+                        {
+                            "en": "风化作用",
+                            "zh": "物理/化学/生物风化",
+                            "example": ""
+                        },
+                        {
+                            "en": "侵蚀与沉积",
+                            "zh": "风力/流水/冰川/海浪",
+                            "example": "风蚀蘑菇、冲积平原"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "地表形态的塑造 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "喜马拉雅山脉是由哪两个板块碰撞形成的？",
+                            "o": [
+                                "太平洋和美洲",
+                                "印度洋和亚欧",
+                                "非洲和亚欧",
+                                "南极洲和太平洋"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "风蚀蘑菇是由什么作用形成的？",
+                            "o": [
+                                "内力作用",
+                                "风力侵蚀",
+                                "流水侵蚀",
+                                "冰川作用"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        }
+    ]
+},
+
+  "高三-历史": {
+    "units": [
+        {
+            "name": "现代中国与当代世界",
+            "desc": "现代史与国际格局",
+            "color": "#FFEDD5",
+            "lessons": [
+                {
+                    "title": "现代中国 · 社会主义建设",
+                    "words": [
+                        {
+                            "en": "一五计划",
+                            "zh": "1953-1957年，奠定工业化基础",
+                            "example": ""
+                        },
+                        {
+                            "en": "改革开放",
+                            "zh": "1978年十一届三中全会",
+                            "example": "经济特区、市场经济"
+                        },
+                        {
+                            "en": "一国两制",
+                            "zh": "香港1997、澳门1999回归",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "当代世界 · 国际格局演变",
+                    "words": [
+                        {
+                            "en": "冷战",
+                            "zh": "1947-1991年，美苏两极格局",
+                            "example": "北约和华约"
+                        },
+                        {
+                            "en": "多极化趋势",
+                            "zh": "欧盟、日本、中国、俄罗斯",
+                            "example": ""
+                        },
+                        {
+                            "en": "经济全球化",
+                            "zh": "WTO、跨国公司",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "现代中国与当代世界 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "中国改革开放开始于哪一年？",
+                            "o": [
+                                "1949年",
+                                "1966年",
+                                "1978年",
+                                "1992年"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "冷战的两大阵营指的是？",
+                            "o": [
+                                "中国和日本",
+                                "美国和苏联",
+                                "英国和法国",
+                                "德国和意大利"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "史料研读与史学方法",
+            "desc": "历史研究方法论",
+            "color": "#FFEDD5",
+            "lessons": [
+                {
+                    "title": "史料研读与史学方法 · 史料分类",
+                    "words": [
+                        {
+                            "en": "一手史料",
+                            "zh": "直接产生的原始资料",
+                            "example": "文献、实物、口述"
+                        },
+                        {
+                            "en": "二手史料",
+                            "zh": "后人研究整理的作品",
+                            "example": "史书、论文"
+                        },
+                        {
+                            "en": "史料辨伪",
+                            "zh": "判断史料的真伪和价值",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "史料研读与史学方法 · 历史解释",
+                    "words": [
+                        {
+                            "en": "历史观",
+                            "zh": "唯物史观/文明史观/全球史观",
+                            "example": ""
+                        },
+                        {
+                            "en": "历史评价",
+                            "zh": "历史地、辩证地评价",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "史料研读与史学方法 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "下列哪个是一手史料？",
+                            "o": [
+                                "《史记》",
+                                "出土的甲骨文",
+                                "历史教科书",
+                                "学术论文"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "历史研究的基本要求是？",
+                            "o": [
+                                "凭感觉判断",
+                                "论从史出",
+                                "人云亦云",
+                                "随意发挥"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        }
+    ]
+},
+
+  "高三-地理": {
+    "units": [
+        {
+            "name": "中国地理专题",
+            "desc": "中国地理总复习",
+            "color": "#E0F2FE",
+            "lessons": [
+                {
+                    "title": "中国地理 · 自然地理",
+                    "words": [
+                        {
+                            "en": "中国地形",
+                            "zh": "西高东低，三级阶梯",
+                            "example": "四大高原/四大盆地/三大平原"
+                        },
+                        {
+                            "en": "中国气候",
+                            "zh": "复杂多样，季风气候显著",
+                            "example": "温度带和干湿地区"
+                        },
+                        {
+                            "en": "中国河流",
+                            "zh": "长江、黄河、珠江",
+                            "example": "内流区和外流区"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "中国地理 · 人文地理",
+                    "words": [
+                        {
+                            "en": "人口分布",
+                            "zh": "黑河-腾冲线，东多西少",
+                            "example": ""
+                        },
+                        {
+                            "en": "四大地理区域",
+                            "zh": "北方/南方/西北/青藏地区",
+                            "example": ""
+                        },
+                        {
+                            "en": "交通运输",
+                            "zh": "五纵三横铁路网",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "中国地理 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "中国地势的特征是？",
+                            "o": [
+                                "东高西低",
+                                "西高东低，三级阶梯",
+                                "中间高四周低",
+                                "南北高中间低"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "中国的母亲河指？",
+                            "o": [
+                                "珠江",
+                                "黄河",
+                                "长江",
+                                "黄河和长江"
+                            ],
+                            "a": 3
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "世界地理专题",
+            "desc": "世界地理总复习",
+            "color": "#E0F2FE",
+            "lessons": [
+                {
+                    "title": "世界地理 · 大洲大洋",
+                    "words": [
+                        {
+                            "en": "七大洲",
+                            "zh": "亚洲/非洲/北美洲/南美洲/南极洲/欧洲/大洋洲",
+                            "example": ""
+                        },
+                        {
+                            "en": "四大洋",
+                            "zh": "太平洋/大西洋/印度洋/北冰洋",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "世界地理 · 主要国家和地区",
+                    "words": [
+                        {
+                            "en": "日本",
+                            "zh": "岛国、资源贫乏、加工贸易",
+                            "example": ""
+                        },
+                        {
+                            "en": "美国",
+                            "zh": "资源丰富、农业地区专业化",
+                            "example": ""
+                        },
+                        {
+                            "en": "俄罗斯",
+                            "zh": "地广人稀、资源丰富",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "世界地理 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "世界上面积最大的洲是？",
+                            "o": [
+                                "非洲",
+                                "北美洲",
+                                "亚洲",
+                                "欧洲"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "日本经济模式是？",
+                            "o": [
+                                "自给自足",
+                                "加工贸易",
+                                "资源出口",
+                                "农业主导"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        }
+    ]
+},
+
+  "高三-英语": {
+    "units": [
+        {
+            "name": "Unit 1 Breaking records",
+            "desc": "极限运动与挑战",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 1 Breaking records · 词汇",
+                    "words": [
+                        {
+                            "en": "challenge",
+                            "zh": "挑战",
+                            "example": "Face the challenge."
+                        },
+                        {
+                            "en": "achievement",
+                            "zh": "成就",
+                            "example": "A great achievement."
+                        },
+                        {
+                            "en": "extreme",
+                            "zh": "极端的",
+                            "example": "Extreme sports."
+                        },
+                        {
+                            "en": "courage",
+                            "zh": "勇气",
+                            "example": "It takes courage."
+                        },
+                        {
+                            "en": "inspire",
+                            "zh": "激励",
+                            "example": "Inspire others."
+                        },
+                        {
+                            "en": "persevere",
+                            "zh": "坚持",
+                            "example": "Persevere through difficulties."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 1 Breaking records · 语法",
+                    "words": [
+                        {
+                            "en": "倒装句",
+                            "zh": "语法：完全倒装和部分倒装",
+                            "example": "Only then did I realize..."
+                        },
+                        {
+                            "en": "强调句",
+                            "zh": "It is/was...that...",
+                            "example": "It was he that broke the record."
+                        },
+                        {
+                            "en": "虚拟语气",
+                            "zh": "与过去事实相反的假设",
+                            "example": "If I had known..."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 1 Breaking records · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"challenge\"的中文意思是？",
+                            "o": [
+                                "成功",
+                                "挑战",
+                                "失败",
+                                "记录"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"persevere\"的同义词是？",
+                            "o": [
+                                "give up",
+                                "persist",
+                                "stop",
+                                "quit"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "Only then ___ realize the importance.",
+                            "o": [
+                                "I did",
+                                "did I",
+                                "I do",
+                                "do I"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 2 Robots",
+            "desc": "人工智能与未来科技",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 2 Robots · 词汇",
+                    "words": [
+                        {
+                            "en": "artificial intelligence",
+                            "zh": "人工智能",
+                            "example": "AI is developing fast."
+                        },
+                        {
+                            "en": "automation",
+                            "zh": "自动化",
+                            "example": "Industrial automation."
+                        },
+                        {
+                            "en": "innovation",
+                            "zh": "创新",
+                            "example": "Technological innovation."
+                        },
+                        {
+                            "en": "efficient",
+                            "zh": "高效的",
+                            "example": "More efficient methods."
+                        },
+                        {
+                            "en": "revolutionary",
+                            "zh": "革命性的",
+                            "example": "A revolutionary change."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 2 Robots · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"artificial intelligence\"缩写是？",
+                            "o": [
+                                "AR",
+                                "AI",
+                                "VR",
+                                "ML"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"efficient\"的意思是？",
+                            "o": [
+                                "复杂的",
+                                "高效的",
+                                "简单的",
+                                "缓慢的"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"innovation\"的中文是？",
+                            "o": [
+                                "自动化",
+                                "人工智能",
+                                "创新",
+                                "革命"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 3 Finding the right career",
+            "desc": "职业规划与未来",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 3 Finding the right career · 词汇",
+                    "words": [
+                        {
+                            "en": "career",
+                            "zh": "职业/事业",
+                            "example": "Choose a career."
+                        },
+                        {
+                            "en": "qualification",
+                            "zh": "资格/学历",
+                            "example": "Get qualifications."
+                        },
+                        {
+                            "en": "interview",
+                            "zh": "面试",
+                            "example": "Job interview."
+                        },
+                        {
+                            "en": "opportunity",
+                            "zh": "机会",
+                            "example": "Career opportunities."
+                        },
+                        {
+                            "en": "ambition",
+                            "zh": "志向",
+                            "example": "Have ambition."
+                        },
+                        {
+                            "en": "dedication",
+                            "zh": "奉献",
+                            "example": "Dedication to work."
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 3 Finding the right career · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "\"career\"和\"job\"的区别？",
+                            "o": [
+                                "完全一样",
+                                "career是长期事业",
+                                "job是事业",
+                                "没有job这个词"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "\"interview\"常见于哪种场合？",
+                            "o": [
+                                "吃饭",
+                                "睡觉",
+                                "求职/升学",
+                                "运动"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "Unit 4 Revision: Mastering Skills",
+            "desc": "高三总复习：语法与写作",
+            "color": "#E0E7FF",
+            "lessons": [
+                {
+                    "title": "Unit 4 Revision · 语法总复习",
+                    "words": [
+                        {
+                            "en": "时态总览",
+                            "zh": "16种时态用法总结",
+                            "example": "一般/进行/完成/完成进行"
+                        },
+                        {
+                            "en": "非谓语动词",
+                            "zh": "不定式/动名词/分词",
+                            "example": "to do, doing, done"
+                        },
+                        {
+                            "en": "从句体系",
+                            "zh": "名次性/定语/状语从句",
+                            "example": ""
+                        },
+                        {
+                            "en": "作文模板",
+                            "zh": "议论文/书信/图表",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "Unit 4 Revision · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "I have ___ here for 3 years.",
+                            "o": [
+                                "live",
+                                "lived",
+                                "living",
+                                "lives"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "The man ___ is standing there is my teacher.",
+                            "o": [
+                                "who",
+                                "which",
+                                "what",
+                                "when"
+                            ],
+                            "a": 0
+                        },
+                        {
+                            "q": "___ is important to learn English well.",
+                            "o": [
+                                "This",
+                                "That",
+                                "It",
+                                "What"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        }
+    ]
+},
+
+  "高二-历史": {
+    "units": [
+        {
+            "name": "近代中国（1840-1919）",
+            "desc": "晚清时期的危机与变革",
+            "color": "#FFEDD5",
+            "lessons": [
+                {
+                    "title": "近代中国 · 鸦片战争与民族危机",
+                    "words": [
+                        {
+                            "en": "鸦片战争",
+                            "zh": "1840年，中国近代史开端",
+                            "example": "《南京条约》"
+                        },
+                        {
+                            "en": "第二次鸦片战争",
+                            "zh": "1856-1860年",
+                            "example": "火烧圆明园"
+                        },
+                        {
+                            "en": "太平天国运动",
+                            "zh": "1851-1864年",
+                            "example": "洪秀全、天京事变"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "近代中国 · 近代化的探索",
+                    "words": [
+                        {
+                            "en": "洋务运动",
+                            "zh": "自强求富，师夷长技",
+                            "example": "曾国藩、李鸿章、张之洞"
+                        },
+                        {
+                            "en": "戊戌变法",
+                            "zh": "1898年百日维新",
+                            "example": "康有为、梁启超"
+                        },
+                        {
+                            "en": "辛亥革命",
+                            "zh": "1911年，推翻清朝统治",
+                            "example": "孙中山、三民主义"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "近代中国 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "中国近代史的开端是？",
+                            "o": [
+                                "鸦片战争",
+                                "太平天国",
+                                "甲午战争",
+                                "辛亥革命"
+                            ],
+                            "a": 0
+                        },
+                        {
+                            "q": "辛亥革命的领导人是？",
+                            "o": [
+                                "康有为",
+                                "梁启超",
+                                "孙中山",
+                                "袁世凯"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "近代中国（1919-1949）",
+            "desc": "新民主主义革命时期",
+            "color": "#FFEDD5",
+            "lessons": [
+                {
+                    "title": "近代中国 · 五四与新文化",
+                    "words": [
+                        {
+                            "en": "五四运动",
+                            "zh": "1919年，新民主主义革命开端",
+                            "example": ""
+                        },
+                        {
+                            "en": "中国共产党成立",
+                            "zh": "1921年，上海",
+                            "example": ""
+                        },
+                        {
+                            "en": "国民革命",
+                            "zh": "1924-1927年，国共第一次合作",
+                            "example": "北伐战争"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "近代中国 · 抗日战争与解放战争",
+                    "words": [
+                        {
+                            "en": "抗日战争",
+                            "zh": "1937-1945年，全民族抗战",
+                            "example": "七七事变、南京大屠杀"
+                        },
+                        {
+                            "en": "解放战争",
+                            "zh": "1946-1949年",
+                            "example": "三大战役"
+                        },
+                        {
+                            "en": "新中国成立",
+                            "zh": "1949年10月1日",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "近代中国 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "抗日战争全面爆发的标志是？",
+                            "o": [
+                                "九一八事变",
+                                "七七事变",
+                                "淞沪会战",
+                                "南京大屠杀"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "新中国成立的时间是？",
+                            "o": [
+                                "1945年",
+                                "1948年",
+                                "1949年",
+                                "1950年"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "世界古代文明",
+            "desc": "古代文明的产生与发展",
+            "color": "#FFEDD5",
+            "lessons": [
+                {
+                    "title": "世界古代文明 · 四大文明古国",
+                    "words": [
+                        {
+                            "en": "古埃及文明",
+                            "zh": "尼罗河流域",
+                            "example": "金字塔、象形文字"
+                        },
+                        {
+                            "en": "古巴比伦文明",
+                            "zh": "两河流域",
+                            "example": "汉谟拉比法典"
+                        },
+                        {
+                            "en": "古印度文明",
+                            "zh": "印度河流域",
+                            "example": "种姓制度、佛教"
+                        },
+                        {
+                            "en": "古希腊文明",
+                            "zh": "爱琴海地区",
+                            "example": "民主政治、哲学"
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "世界古代文明 · 中古时期",
+                    "words": [
+                        {
+                            "en": "罗马帝国",
+                            "zh": "屋大维、罗马法",
+                            "example": ""
+                        },
+                        {
+                            "en": "中世纪西欧",
+                            "zh": "封建制度、基督教文化",
+                            "example": ""
+                        },
+                        {
+                            "en": "阿拉伯帝国",
+                            "zh": "伊斯兰教、东西方文化交流",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "世界古代文明 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "《汉谟拉比法典》属于哪个文明？",
+                            "o": [
+                                "古埃及",
+                                "古巴比伦",
+                                "古印度",
+                                "古希腊"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "雅典民主政治的最高权力机构是？",
+                            "o": [
+                                "元老院",
+                                "公民大会",
+                                "五百人会议",
+                                "最高法院"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "世界近代史",
+            "desc": "资本主义发展和世界格局",
+            "color": "#FFEDD5",
+            "lessons": [
+                {
+                    "title": "世界近代史 · 思想解放与革命",
+                    "words": [
+                        {
+                            "en": "文艺复兴",
+                            "zh": "14-16世纪，人文主义",
+                            "example": "达芬奇、莎士比亚"
+                        },
+                        {
+                            "en": "新航路开辟",
+                            "zh": "15-16世纪",
+                            "example": "哥伦布、麦哲伦"
+                        },
+                        {
+                            "en": "资产阶级革命",
+                            "zh": "英国/美国/法国革命",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "世界近代史 · 工业革命",
+                    "words": [
+                        {
+                            "en": "第一次工业革命",
+                            "zh": "18世纪60年代开始",
+                            "example": "蒸汽机、火车"
+                        },
+                        {
+                            "en": "第二次工业革命",
+                            "zh": "19世纪后期",
+                            "example": "电力、内燃机"
+                        },
+                        {
+                            "en": "马克思主义",
+                            "zh": "1848年《共产党宣言》发表",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "世界近代史 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "文艺复兴的核心思想是？",
+                            "o": [
+                                "神权至上",
+                                "人文主义",
+                                "理性主义",
+                                "自由主义"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "第一次工业革命的标志性发明是？",
+                            "o": [
+                                "电灯",
+                                "蒸汽机",
+                                "汽车",
+                                "飞机"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        }
+    ]
+},
+
+  "高二-地理": {
+    "units": [
+        {
+            "name": "第一章 人口与城市",
+            "desc": "人口增长、迁移和城市化",
+            "color": "#E0F2FE",
+            "lessons": [
+                {
+                    "title": "人口与城市 · 人口",
+                    "words": [
+                        {
+                            "en": "人口增长模式",
+                            "zh": "原始型→传统型→现代型",
+                            "example": ""
+                        },
+                        {
+                            "en": "人口迁移",
+                            "zh": "推拉理论，经济因素为主",
+                            "example": "国内/国际人口迁移"
+                        },
+                        {
+                            "en": "环境人口容量",
+                            "zh": "资源是制约人口容量的首要因素",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "人口与城市 · 城市",
+                    "words": [
+                        {
+                            "en": "城市化",
+                            "zh": "人口向城市集聚，城市用地扩大",
+                            "example": ""
+                        },
+                        {
+                            "en": "城市功能区",
+                            "zh": "商业区/住宅区/工业区",
+                            "example": ""
+                        },
+                        {
+                            "en": "城市化问题",
+                            "zh": "交通拥堵、环境污染、住房紧张",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "人口与城市 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "我国当前人口增长模式最接近？",
+                            "o": [
+                                "原始型",
+                                "传统型",
+                                "现代型",
+                                "过渡型"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "影响人口迁移的主导因素是？",
+                            "o": [
+                                "自然因素",
+                                "经济因素",
+                                "政治因素",
+                                "文化因素"
+                            ],
+                            "a": 1
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "第二章 农业与工业",
+            "desc": "生产活动与地域联系",
+            "color": "#E0F2FE",
+            "lessons": [
+                {
+                    "title": "农业与工业 · 农业",
+                    "words": [
+                        {
+                            "en": "农业区位因素",
+                            "zh": "自然：气候/地形/土壤/水源；社会经济：市场/交通/政策",
+                            "example": ""
+                        },
+                        {
+                            "en": "农业地域类型",
+                            "zh": "季风水田农业/商品谷物农业/大牧场放牧业等",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "农业与工业 · 工业",
+                    "words": [
+                        {
+                            "en": "工业区位因素",
+                            "zh": "原料/市场/动力/劳动力/技术",
+                            "example": "工业区位的变化"
+                        },
+                        {
+                            "en": "工业集聚与分散",
+                            "zh": "工业联系→集聚→工业地域",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "农业与工业 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "季风水田农业主要分布在？",
+                            "o": [
+                                "欧洲",
+                                "北美洲",
+                                "东亚/东南亚/南亚",
+                                "非洲"
+                            ],
+                            "a": 2
+                        },
+                        {
+                            "q": "高新技术产业主要依赖什么区位因素？",
+                            "o": [
+                                "原料",
+                                "劳动力",
+                                "市场",
+                                "知识和技术"
+                            ],
+                            "a": 3
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        },
+        {
+            "name": "第三章 区域可持续发展",
+            "desc": "区域差异与发展策略",
+            "color": "#E0F2FE",
+            "lessons": [
+                {
+                    "title": "区域可持续发展 · 区域差异",
+                    "words": [
+                        {
+                            "en": "区域的含义",
+                            "zh": "具有一定边界的空间单位",
+                            "example": ""
+                        },
+                        {
+                            "en": "区域发展阶段",
+                            "zh": "以传统农业为主→工业化→高效益综合发展",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "区域可持续发展 · 生态环境建设",
+                    "words": [
+                        {
+                            "en": "荒漠化防治",
+                            "zh": "西北地区，植树种草",
+                            "example": "三北防护林"
+                        },
+                        {
+                            "en": "森林开发与保护",
+                            "zh": "热带雨林的全球环境效应",
+                            "example": ""
+                        },
+                        {
+                            "en": "流域综合开发",
+                            "zh": "田纳西河流域为例",
+                            "example": ""
+                        }
+                    ],
+                    "questions": null,
+                    "type": "learn"
+                },
+                {
+                    "title": "区域可持续发展 · 测验",
+                    "words": [],
+                    "questions": [
+                        {
+                            "q": "三北防护林主要是为了防治？",
+                            "o": [
+                                "水土流失",
+                                "荒漠化",
+                                "洪涝灾害",
+                                "盐碱化"
+                            ],
+                            "a": 1
+                        },
+                        {
+                            "q": "热带雨林主要分布在？",
+                            "o": [
+                                "温带",
+                                "亚热带",
+                                "热带",
+                                "寒带"
+                            ],
+                            "a": 2
+                        }
+                    ],
+                    "type": "quiz"
+                }
+            ]
+        }
+    ]
+}
 };
