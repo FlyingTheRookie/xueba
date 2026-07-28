@@ -784,26 +784,18 @@ function showConfetti() {
 if ('speechSynthesis' in window) { speechSynthesis.getVoices(); }
 nav('home');
 
-// Service Worker
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.getRegistrations().then(regs => {
-    regs.forEach(r => r.unregister());
-  }).then(() => {
-    if ('caches' in window) {
-      caches.keys().then(keys => keys.forEach(k => caches.delete(k)));
-    }
-  }).then(() => {
-    navigator.serviceWorker.register('./sw.js?v=5').then(reg => {
-      reg.addEventListener('updatefound', () => {
-        const newSW = reg.installing;
-        if (newSW) newSW.addEventListener('statechange', () => {
-          if (newSW.state === 'installed' && navigator.serviceWorker.controller) {
-            newSW.postMessage('skipWaiting');
-            setTimeout(() => location.reload(), 300);
-          }
-        });
+// Service Worker - only register on same-origin (skip on CDN like jsDelivr)
+if ('serviceWorker' in navigator && location.protocol === 'https:' && location.hostname === location.host && !location.hostname.includes('jsdelivr.net')) {
+  navigator.serviceWorker.register('./sw.js?v=6').then(reg => {
+    reg.addEventListener('updatefound', () => {
+      const newSW = reg.installing;
+      if (newSW) newSW.addEventListener('statechange', () => {
+        if (newSW.state === 'installed' && navigator.serviceWorker.controller) {
+          newSW.postMessage('skipWaiting');
+          setTimeout(() => location.reload(), 300);
+        }
       });
-    }).catch(()=>{});
-  });
+    });
+  }).catch(()=>{});
 }
 </script></body></html>

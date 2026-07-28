@@ -1,5 +1,5 @@
 // Service Worker for XueBa - Offline Support
-const CACHE_NAME = 'xueba-kids-v2';
+const CACHE_NAME = 'xueba-kids-v3';
 const ASSETS = [
   './',
   './index.html',
