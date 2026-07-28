@@ -201,6 +201,60 @@ body{font-family:var(--f);background:var(--bg);color:var(--txt);min-height:100dv
 
 @media (min-width:481px){#app{border-left:2px solid var(--brd);border-right:2px solid var(--brd);min-height:100dvh}body{background:#FFE8EF}}
 @media (max-width:360px){.flashcard-container{height:220px}.flashcard .w-en{font-size:1.6rem}.subj-grid{grid-template-columns:1fr 1fr}.grade-grid{grid-template-columns:1fr}}
+
+/* ===== AI MODULE STYLES ===== */
+.ai-tabs{display:flex;gap:4px;margin:12px 16px;background:var(--card);border-radius:30px;padding:4px;box-shadow:var(--sh)}
+.ai-tab-btn{flex:1;padding:9px 8px;border:none;background:none;font-size:.76rem;font-weight:700;font-family:var(--f);color:var(--txt2);cursor:pointer;transition:var(--tr);border-radius:26px;z-index:1}
+.ai-tab-btn.active{color:#fff;background:linear-gradient(135deg,var(--purple),var(--sky))}
+
+.ai-chat-area{flex:1;overflow-y:auto;padding:12px 16px;display:flex;flex-direction:column;gap:10px;max-height:58vh}
+.ai-msg{display:flex;gap:10px;animation:slideDown .3s ease;max-width:92%}
+.ai-msg.user{margin-left:auto;flex-direction:row-reverse}
+.ai-msg .ai-avatar{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.ai-msg.teacher .ai-avatar{background:linear-gradient(135deg,var(--purple-l),var(--purple))}
+.ai-msg.user .ai-avatar{background:linear-gradient(135deg,var(--pink-l),var(--pink))}
+.ai-msg .ai-bubble{padding:10px 14px;border-radius:18px;font-size:.84rem;line-height:1.55;font-weight:600}
+.ai-msg.teacher .ai-bubble{background:var(--card);color:var(--txt);box-shadow:var(--sh);border-bottom-left-radius:4px}
+.ai-msg.user .ai-bubble{background:linear-gradient(135deg,var(--pink),var(--pink-d));color:#fff;border-bottom-right-radius:4px}
+.ai-msg.typing .ai-bubble{background:var(--card);padding:14px 18px;box-shadow:var(--sh)}
+.ai-dots{display:flex;gap:5px}.ai-dots span{width:8px;height:8px;border-radius:50%;background:var(--purple-l);animation:pulse 1.2s ease-in-out infinite}.ai-dots span:nth-child(2){animation-delay:.2s}.ai-dots span:nth-child(3){animation-delay:.4s}
+
+.ai-input-wrap{display:flex;gap:8px;padding:12px 16px 20px;position:sticky;bottom:0;background:linear-gradient(0deg,var(--bg) 80%,transparent)}
+.ai-input{flex:1;padding:14px 18px;border:2.5px solid var(--brd);border-radius:30px;font-size:.85rem;font-family:var(--f);background:var(--card);color:var(--txt);outline:none;transition:var(--tr);font-weight:600}
+.ai-input:focus{border-color:var(--purple);box-shadow:0 0 0 3px rgba(176,124,224,.15)}
+.ai-send{width:44px;height:44px;border-radius:50%;border:none;background:linear-gradient(135deg,var(--purple),var(--sky));color:#fff;font-size:1.1rem;cursor:pointer;transition:var(--tr);flex-shrink:0}
+.ai-send:active{transform:scale(.88)}
+
+.ai-gen-box{background:var(--card);border-radius:24px;padding:24px 20px;margin:12px 16px;text-align:center;box-shadow:var(--sh);border:2px dashed var(--purple-l)}
+.ai-gen-box .ai-gen-icon{font-size:3rem;display:inline-block;animation:float 2.5s ease-in-out infinite}
+.ai-gen-box .ai-gen-title{font-weight:800;font-size:1.1rem;margin:8px 0 4px;color:var(--txt)}
+.ai-gen-box .ai-gen-hint{font-size:.74rem;color:var(--txt2);margin-bottom:16px;font-weight:600}
+.ai-gen-context{display:flex;gap:8px;justify-content:center;margin:10px 0;flex-wrap:wrap}
+.ai-gen-chip{background:var(--bg);padding:6px 14px;border-radius:20px;font-size:.72rem;font-weight:700;color:var(--txt2)}
+.ai-gen-q{background:var(--card);border-radius:18px;padding:14px;margin:8px 0;box-shadow:var(--sh);text-align:left;border-left:4px solid var(--purple)}
+.ai-gen-q .ai-q-num{font-size:.68rem;color:var(--purple);font-weight:800;margin-bottom:4px}
+.ai-gen-q .ai-q-text{font-size:.86rem;font-weight:700;color:var(--txt);margin-bottom:8px}
+.ai-gen-q .ai-q-opts{display:flex;flex-direction:column;gap:5px}
+.ai-gen-q .ai-q-opt{padding:8px 12px;background:var(--bg);border-radius:12px;font-size:.78rem;cursor:pointer;transition:var(--tr);font-weight:600}
+.ai-gen-q .ai-q-opt.correct{background:#F0FDF4;color:var(--green-d);font-weight:800}
+.ai-gen-q .ai-q-opt.wrong{background:#FFF5F7;color:var(--pink-d)}
+.ai-gen-q .ai-q-opt.disabled{pointer-events:none;opacity:.7}
+.ai-gen-q .ai-q-expl{font-size:.72rem;color:var(--purple-d);margin-top:6px;font-weight:600;display:none}
+.ai-gen-q .ai-q-expl.show{display:block}
+
+.ai-check-box{margin:12px 16px}
+.ai-check-card{background:var(--card);border-radius:22px;padding:18px;margin-bottom:12px;box-shadow:var(--sh)}
+.ai-check-card label{display:block;font-size:.76rem;font-weight:800;color:var(--txt2);margin-bottom:6px}
+.ai-check-card textarea{width:100%;padding:12px 16px;border:2.5px solid var(--brd);border-radius:18px;font-size:.85rem;font-family:var(--f);resize:none;outline:none;transition:var(--tr);background:var(--bg);color:var(--txt);min-height:80px;font-weight:600}
+.ai-check-card textarea:focus{border-color:var(--purple);box-shadow:0 0 0 3px rgba(176,124,224,.12)}
+.ai-check-result{background:var(--card);border-radius:22px;padding:20px;margin-top:12px;box-shadow:var(--sh);display:none;animation:slideDown .3s ease}
+.ai-check-result.show{display:block}
+.ai-check-result .ai-score{font-size:2.2rem;font-weight:800;text-align:center}
+.ai-check-result .ai-feedback{font-size:.84rem;color:var(--txt);margin-top:10px;line-height:1.6;font-weight:600}
+
+.suggested-q{display:flex;gap:6px;flex-wrap:wrap;padding:0 16px 8px}
+.suggested-q .sq{background:var(--card);border:2px solid var(--brd);padding:7px 14px;border-radius:20px;font-size:.72rem;cursor:pointer;transition:var(--tr);font-weight:700;color:var(--txt2);white-space:nowrap}
+.suggested-q .sq:active{background:var(--purple-l);color:#fff;border-color:var(--purple);transform:scale(.95)}
 </style>
 </head>
 <body><div id="app"></div>
@@ -377,6 +431,10 @@ let selCardIdx = 0;
 let selQuizIdx = 0;
 let quizCorrect = 0;
 let selLessonIdx = 0;
+let aiTab = 'chat';
+let aiChatHistory = [];
+let aiGeneratedQuiz = null;
+let aiQuizAnswered = {};
 
 function nav(s, data) {
   screen = s;
@@ -403,6 +461,7 @@ function render() {
     case 'units': renderUnits(app); break;
     case 'learn': renderLearn(app); break;
     case 'quiz': renderQuiz(app); break;
+    case 'ai': renderAI(app); break;
   }
   renderBottomNav();
 }
@@ -750,8 +809,292 @@ function renderBottomNav() {
   bn.className = 'bottom-nav';
   bn.innerHTML = `
     <button class="ni ${screen==='home'?'active':''}" onclick="nav('home')"><span class="i">🏠</span>首页</button>
+    <button class="ni ${screen==='ai'?'active':''}" onclick="nav('ai')"><span class="i">🤖</span>AI老师</button>
   `;
   document.getElementById('app').appendChild(bn);
+}
+
+/* ============ AI MODULE ============ */
+const DS_KEY = 'sk-eed2b52e77de4709ad0b3287f0dc7b88';
+const DS_API = 'https://api.deepseek.com/v1/chat/completions';
+
+const AI_SYSTEM_PROMPT = `你是一位热情可爱的AI学习辅导老师，名叫"小智"。你的学生是K-12阶段的小朋友。
+
+你的风格：
+- 用温暖鼓励的语气，像一个大哥哥/大姐姐一样
+- 多用emoji表情让对话生动有趣
+- 解释概念时要简单易懂，用生活化的比喻
+- 回答控制在300字以内，太长小朋友看不完
+- 如果小朋友答错了，不要直接批评，而是温柔地引导
+- 出题时要适合对应年级的难度
+
+请始终用中文回答。每次回答开头可以带一个可爱的emoji。`;
+
+async function callDeepSeek(messages, opts={}) {
+  const defaultMsgs = [{role:'system',content:AI_SYSTEM_PROMPT}];
+  const body = {
+    model: 'deepseek-chat',
+    messages: [...defaultMsgs, ...messages],
+    temperature: opts.temperature ?? 0.75,
+    max_tokens: opts.max_tokens ?? 800
+  };
+  const resp = await fetch(DS_API, {
+    method: 'POST',
+    headers: {'Content-Type':'application/json','Authorization':'Bearer '+DS_KEY},
+    body: JSON.stringify(body)
+  });
+  if (!resp.ok) throw new Error('API请求失败: '+resp.status);
+  const data = await resp.json();
+  return data.choices[0].message.content;
+}
+
+function renderAI(app) {
+  const ctx = selSubject ? `${selGrade} · ${selSubject}` : (selGrade || '全部年级');
+  const tabs = [
+    {id:'chat',label:'💬 问AI'},
+    {id:'gen',label:'✍️ AI出题'},
+    {id:'check',label:'✅ AI批改'}
+  ];
+
+  let html = `
+  <div id="s-ai" class="screen active">
+    <div class="navbar">
+      <h1>🤖 AI 辅导老师</h1><span class="version-tag">小智</span>
+    </div>`;
+
+  // Context info
+  if (selSubject) {
+    html += `<div style="text-align:center;padding:8px 20px;font-size:.72rem;color:var(--txt2);font-weight:600">
+      📍 当前学习：${selGrade} ${selSubject}
+    </div>`;
+  }
+
+  // AI Tab bar
+  html += `<div class="ai-tabs">
+    ${tabs.map(t=>`<button class="ai-tab-btn ${aiTab===t.id?'active':''}" onclick="switchAiTab('${t.id}')">${t.label}</button>`).join('')}
+  </div>`;
+
+  // Tab content
+  if (aiTab === 'chat') html += renderAiChat();
+  else if (aiTab === 'gen') html += renderAiGen();
+  else if (aiTab === 'check') html += renderAiCheck();
+
+  html += `</div>`;
+  app.innerHTML = html;
+
+  // Scroll chat to bottom
+  if (aiTab === 'chat') {
+    setTimeout(()=>{
+      const area = document.getElementById('chat-area');
+      if (area) area.scrollTop = area.scrollHeight;
+    },100);
+  }
+}
+
+function switchAiTab(tab) {
+  aiTab = tab;
+  nav('ai');
+}
+
+/* ---- AI Chat ---- */
+function renderAiChat() {
+  const ctx = selSubject ? `我正在学习${selGrade}的${selSubject}` : '我正在学习';
+  const suggestions = selSubject
+    ? [`${selSubject}怎么学才有趣？`,`帮我讲解${selSubject}的一个知识点`,`${selSubject}有什么学习小窍门？`]
+    : ['学习有什么好方法？','怎么提高记忆力？','帮我做一个学习计划'];
+
+  let chatHtml = '';
+  if (aiChatHistory.length === 0) {
+    chatHtml = `<div style="text-align:center;padding:20px;color:var(--txt3)">
+      <div style="font-size:2.5rem;margin-bottom:8px">🤖</div>
+      <div style="font-weight:700;font-size:.9rem">你好！我是 AI 辅导老师小智~</div>
+      <div style="font-size:.74rem;margin-top:4px">任何学习上的问题都可以问我哦！</div>
+    </div>`;
+  }
+  aiChatHistory.forEach(m=>{
+    const isUser = m.role === 'user';
+    chatHtml += `<div class="ai-msg ${isUser?'user':'teacher'}">
+      <div class="ai-avatar">${isUser?'🧒':'🤖'}</div>
+      <div class="ai-bubble">${m.content.replace(/\n/g,'<br>')}</div>
+    </div>`;
+  });
+
+  return `
+  <div class="ai-chat-area" id="chat-area">${chatHtml}</div>
+  <div class="suggested-q">
+    ${suggestions.map(s=>`<span class="sq" onclick="askQuestion('${s.replace(/'/g,"\\'")}')">${s}</span>`).join('')}
+  </div>
+  <div class="ai-input-wrap">
+    <input class="ai-input" id="ai-input" placeholder="问小智老师一个问题..." onkeydown="if(event.key==='Enter')sendMessage()">
+    <button class="ai-send" onclick="sendMessage()">➤</button>
+  </div>`;
+}
+
+async function askQuestion(q) {
+  aiChatHistory.push({role:'user',content:q});
+  nav('ai');
+  renderTyping();
+  try {
+    const reply = await callDeepSeek(aiChatHistory);
+    aiChatHistory.push({role:'assistant',content:reply});
+  } catch(e) {
+    aiChatHistory.push({role:'assistant',content:'😅 网络不太好，等一会再试试吧~'});
+  }
+  nav('ai');
+}
+
+function sendMessage() {
+  const inp = document.getElementById('ai-input');
+  if (!inp) return;
+  const q = inp.value.trim();
+  if (!q) return;
+  inp.value = '';
+  askQuestion(q);
+}
+
+function renderTyping() {
+  const area = document.getElementById('chat-area');
+  if (!area) return;
+  area.innerHTML += `<div class="ai-msg teacher typing" id="typing-indicator">
+    <div class="ai-avatar">🤖</div>
+    <div class="ai-bubble"><div class="ai-dots"><span></span><span></span><span></span></div></div>
+  </div>`;
+  area.scrollTop = area.scrollHeight;
+}
+
+/* ---- AI Quiz Generation ---- */
+function renderAiGen() {
+  const ctx = selSubject || '通用';
+  return `
+  <div class="ai-gen-box">
+    <div class="ai-gen-icon">🧠</div>
+    <div class="ai-gen-title">AI 智能出题</div>
+    <div class="ai-gen-hint">根据当前学习内容，生成专属练习题</div>
+    <div class="ai-gen-context">
+      <span class="ai-gen-chip">📚 ${selGrade||'未选年级'}</span>
+      <span class="ai-gen-chip">📖 ${ctx}</span>
+    </div>
+    <button class="btn btn-pri btn-lg" onclick="generateQuiz()" id="gen-btn" style="max-width:260px;margin:0 auto">
+      ✨ 给我出几道题！
+    </button>
+    ${aiGeneratedQuiz ? renderQuizQuestions() : ''}
+  </div>`;
+}
+
+function renderQuizQuestions() {
+  if (!aiGeneratedQuiz) return '';
+  return `<div style="padding:12px 0">` +
+    aiGeneratedQuiz.map((q,i) => {
+      const ans = aiQuizAnswered['q'+i];
+      return `<div class="ai-gen-q">
+        <div class="ai-q-num">📝 第${i+1}题</div>
+        <div class="ai-q-text">${q.text}</div>
+        <div class="ai-q-opts">
+          ${q.options.map((o,j)=>`<div class="ai-q-opt ${ans!==undefined?(j===q.answer?'correct':(ans===j?'wrong':'')):''} ${ans!==undefined?'disabled':''}" onclick="answerAiQuiz(${i},${j},this)">${String.fromCharCode(65+j)}. ${o}</div>`).join('')}
+        </div>
+        ${ans!==undefined?`<div class="ai-q-expl ${ans===q.answer?'show':''}" style="${ans!==q.answer?'display:block':''}">💡 ${q.explanation||(ans===q.answer?'回答正确！太棒了！':'正确答案是 '+String.fromCharCode(65+q.answer)+'，看看解析吧~')}</div>`:''}
+      </div>`;
+    }).join('') +
+    `<button class="btn btn-out" onclick="aiGeneratedQuiz=null;aiQuizAnswered={};nav('ai')" style="margin-top:8px">🔄 重新出题</button></div>`;
+}
+
+async function generateQuiz() {
+  const btn = document.getElementById('gen-btn');
+  if (btn) { btn.textContent = '⏳ 小智正在出题...'; btn.disabled = true; }
+
+  const ctx = selSubject ? `${selGrade}${selSubject}` : '通用知识';
+  const msg = `请为正在学习${ctx}的学生出3道选择题。
+每道题包含：题目、4个选项（A/B/C/D）、正确答案索引（0-3）、简短解析。
+题目难度要适合${selGrade||'小学'}学生的水平。
+请严格按照JSON格式输出，不要加任何其他文字：
+[{"text":"题目","options":["A选项","B选项","C选项","D选项"],"answer":0,"explanation":"解析"}]`;
+
+  try {
+    const reply = await callDeepSeek([{role:'user',content:msg}], {temperature:0.85,max_tokens:1500});
+    const jsonStart = reply.indexOf('[');
+    const jsonEnd = reply.lastIndexOf(']');
+    if (jsonStart>=0 && jsonEnd>jsonStart) {
+      aiGeneratedQuiz = JSON.parse(reply.slice(jsonStart, jsonEnd+1));
+      aiQuizAnswered = {};
+    } else {
+      aiGeneratedQuiz = [{
+        text:'API返回格式异常，请重试',
+        options:['重试一次','换个题目','稍后再试','联系老师'],
+        answer:0,
+        explanation:'小智出了点问题，重新出一道题就好啦~'
+      }];
+    }
+  } catch(e) {
+    alert('出题失败，请重试：'+e.message);
+  }
+  if (btn) { btn.textContent = '✨ 给我出几道题！'; btn.disabled = false; }
+  nav('ai');
+}
+
+function answerAiQuiz(qIdx, optIdx, el) {
+  if (aiQuizAnswered['q'+qIdx] !== undefined) return;
+  aiQuizAnswered['q'+qIdx] = optIdx;
+  if (optIdx === aiGeneratedQuiz[qIdx].answer) {
+    showToast('✅ 答对了！真棒！');
+  } else {
+    showToast('💪 再想想~');
+  }
+  nav('ai');
+}
+
+/* ---- AI Answer Check ---- */
+function renderAiCheck() {
+  return `
+  <div class="ai-check-box">
+    <div class="ai-check-card">
+      <label>📝 题目的问题</label>
+      <textarea id="check-q" placeholder="比如：请简述光合作用的过程..."></textarea>
+    </div>
+    <div class="ai-check-card">
+      <label>✏️ 小朋友的答案</label>
+      <textarea id="check-a" placeholder="把答案写在这里..."></textarea>
+    </div>
+    <div class="ai-check-card">
+      <label>📖 标准答案（选填）</label>
+      <textarea id="check-ref" placeholder="如果有标准答案可以填在这里..." style="min-height:60px"></textarea>
+    </div>
+    <button class="btn btn-pri btn-lg" onclick="checkAnswer()" id="check-btn">🔍 请小智老师批改</button>
+    <div class="ai-check-result" id="check-result">
+      <div class="ai-score" id="check-score"></div>
+      <div class="ai-feedback" id="check-fb"></div>
+    </div>
+  </div>`;
+}
+
+async function checkAnswer() {
+  const q = document.getElementById('check-q').value.trim();
+  const a = document.getElementById('check-a').value.trim();
+  const ref = document.getElementById('check-ref').value.trim();
+  if (!q || !a) { showToast('😅 请填写题目和答案哦~'); return; }
+
+  const btn = document.getElementById('check-btn');
+  btn.textContent = '⏳ 小智正在批改...';
+  btn.disabled = true;
+
+  const ctx = selSubject ? `（学习内容：${selGrade}${selSubject}）` : '';
+  const refPart = ref ? `\n标准答案：${ref}` : '';
+  const msg = `请批改以下学生答案${ctx}。\n题目：${q}\n学生答案：${a}${refPart}\n\n请给出：1) 得分（0-100）2) 温和的评价和鼓励 3)如果不正确，指出哪里可以改进。用友好的语气，像在辅导小朋友。\n格式：\n【得分】85分\n【评价】你的回答...`;
+
+  try {
+    const reply = await callDeepSeek([{role:'user',content:msg}], {max_tokens:600});
+    const scoreMatch = reply.match(/(\d+)分/);
+    const score = scoreMatch ? scoreMatch[1] : '?';
+    const sc = parseInt(score)>=80?'var(--green)':parseInt(score)>=60?'var(--yellow-d)':'var(--pink)';
+
+    document.getElementById('check-score').style.color = sc;
+    document.getElementById('check-score').textContent = score+'分';
+    document.getElementById('check-fb').innerHTML = reply.replace(/\n/g,'<br>');
+    document.getElementById('check-result').classList.add('show');
+  } catch(e) {
+    showToast('😅 批改失败，请重试~');
+  }
+  btn.textContent = '🔍 请小智老师批改';
+  btn.disabled = false;
 }
 
 /* ============ TOAST & CONFETTI ============ */
